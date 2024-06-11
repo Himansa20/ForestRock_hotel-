@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer with Icon and Text</title>
+</head>
+<body>
+    <div style="display: flex; align-items: center; padding: 20px; background-color: #f1f1f1; border-radius: 5px; width: 800px; margin: 0 auto;">
+        <img src="https://drive.google.com/uc?export=download&id=1ZbUEF5C06FU9zKMulCxGAvH2GvHo6hJC" alt="Icon" style="width: 50px; height: 50px; border-radius: 5px; margin-right: 20px;">
+        <p style="margin: 0; font-size: 20px;">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+    </div>
+</body>
+</html>
