@@ -50,6 +50,12 @@ body {
     border-radius: 5px;
 }
 
+.cato {
+    background-color: #d71212;
+    color: black;
+    border-radius: 5px;
+}
+
 .nav-links a.active:hover {
     background-color: #00FFFF;
 }
