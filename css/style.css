@@ -1,0 +1,38 @@
+
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  
+}
+
+.flex-container > div {
+  background-color: #1e1717;
+  width:200px;
+  margin: 100px;
+  text-align: center;
+  line-height: 150px;
+  font-size: 2px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+}
+
+.left-column, .right-column {
+    flex: 1;
+    padding: 20px;
+}
+
+.left-column {
+    background-color: #fdfbfb; 
+}
+
+.right-column {
+    background-color:#fdfbfb; 
+}
