@@ -1,87 +1,62 @@
 
-body {
-    margin: 0;
-    font-family: 'Ubuntu', sans-serif;
-    background-color: #333;
-}
 
-.navbar {
+
+.flex-container {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #333;
-    padding: 10px 20px;
-}
+    
+    
+  }
+  
+  .flex-container > div {
+    background-color: #57de7b;
+    width: 300px;
+    margin: 80px;
+    text-align: center;
+    line-height: 270px;
+    font-size: 1px;
+    
+  }
+  .flex-container > h1{
+    object-position: 40cap;
+    text-align:center ;
+    color: #57de7b;
+  }
 
-.logo img {
-    height: 40px;
-}
+  .flex-container >    h1{
 
-.nav-links {
-    align-items: center;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    gap: 20px;
-    border-bottom: 3px solid white;
-    padding: 20px;
-}
+  color: black;
+  
+  padding: 10px;
+  margin: 15px;
+  position: relative;
+  
+  top: 90px;
+  left: -5px;
+  
+  }
+  #fx{
 
-.nav-links li {
-    display: inline;
-}
+    background-color: #57de7b;
+    width: 1450px;
+    margin: 100px;
+    text-align: center;
+    line-height: 100px;
+    top: -20px;
 
-.nav-links a {
-    color: white;
-    text-decoration: none;
-    padding: 8px 15px;
-    transition: background-color 0.3s;
-}
+  }
 
-.nav-links a:hover {
-    background-color: #575757;
-    border-radius: 5px;
-}
+  #pr{
 
-.nav-links a.active {
-    background-color: #00FFFF;
-    color: black;
-    border-radius: 5px;
-}
+  color: rgb(0, 0, 0);
+  line-height: 1.4;
 
-.nav-links a.active:hover {
-    background-color: #00FFFF;
-}
-.nav-divider {
-    border: none;
-    height: 1px;
-    background-color: white;
-    margin: 0;
-    width: 100%;
-}
-.body{
-    margin: 0;
-    height: 50%;
-    align-items:center;
-    display: flex;
-    justify-content:center ;
+  }
 
-}
-.container{
-display: flex;
-flex-direction:column;
-align-items: flex-end;
-justify-content: center;
-text-align: center;
-padding: 10px;  
-margin-top: 10vh;
-}
-img{
-   height: auto; 
-}
-.item{
-    margin-top: 5px;
-    color: aliceblue;
-    font-size: large;
-}
+
+
+
+
+
+ 
+
+
