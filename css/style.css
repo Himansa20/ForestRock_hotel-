@@ -1,10 +1,165 @@
-*,
-*::before*,
-::after {
-  box-sizing: border-box;
+:root {
+  --color-black: #000;
+  --gradient-main: linear-gradient(to right, #7e3f0b 0%, #f4ce7d 100%);
+  --border-radius: 5px;
+  --box-shadow: 2px 7px 14px -1px rgba(0, 0, 0, 0.42);
 }
-body {
-  padding: 0;
+
+* {
   margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
   font-size: 62.5%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+/*Navigation part........................*/
+.navigation {
+  width: 100%;
+  /* border: 1px solid; border......................................*/
+  display: flex;
+  padding: 2rem;
+  gap: 10rem;
+  box-shadow: 2px 7px 14px -1px rgba(0, 0, 0, 0.42);
+}
+.navigation > * {
+  /* border: 1px solid; */
+  /* border...................................... */
+}
+.navigation__logo {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+}
+.navigation__logo-text {
+  font-size: 1.9rem;
+  text-transform: uppercase;
+  /* border: 1px solid; border......................................*/
+  margin: 0 auto;
+  padding: 0.5rem;
+  font-weight: 900;
+  background: var(--gradient-main);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.navigation-list {
+  display: flex;
+  list-style: none;
+  font-size: 1.6rem;
+  padding: 0;
+  gap: 3.2rem;
+}
+.navigation__list-items {
+  border: 1px solid transparent;
+  /* box-shadow: -1px 5px 14px -3px rgba(0, 0, 0, 0.75); */
+  padding: 0.9rem;
+  transition: all 0.4s;
+}
+.navigation__list-items:hover {
+  border: 1px solid;
+}
+
+.navigation__menu-1 {
+  display: flex;
+  align-items: center;
+  padding: 0 0.5rem 0 0.5rem;
+}
+.navigation__list-items,
+a {
+  text-decoration: none;
+  color: var(--color-black);
+  font-weight: 600;
+}
+
+.navigation__menu-2 {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  padding: 0 1rem 0 1rem;
+  position: relative;
+}
+
+.icon2 {
+  width: 100px;
+}
+.magnifying {
+  display: flex;
+}
+
+.searchbar {
+  height: 4rem;
+  width: 15rem;
+  outline: none;
+  border-top-left-radius: var(--border-radius);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  font-family: inherit;
+  padding: 5px;
+  transition: all 0.5s;
+}
+.nav__search {
+  padding: 5px;
+  border: none;
+  background-color: #534f4f;
+}
+.navigation__search-bar {
+  display: flex;
+  align-items: center;
+}
+.search {
+  width: 3rem;
+  height: 2.7rem;
+  fill: #fff;
+}
+.searchbar:focus {
+  width: 20rem;
+}
+.nav__btn-dot {
+  padding: 0.1rem 1.5rem 0.1rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+}
+.dot-horizo {
+  width: 20px;
+  height: 20px;
+}
+.button {
+  padding: 0.9rem 1.6rem 0.9rem 1.6rem;
+  border-radius: var(--border-radius);
+  border: 2px solid;
+}
+.navigation-button--primary {
+  background-color: var(--color-black);
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 800;
+  transition: all 0.3s;
+  position: relative;
+}
+.navigation-button--primary:hover {
+  /* opacity: 0.8; */
+  border: 2px solid var(--color-black);
+  background-color: transparent;
+  color: var(--color-black);
+}
+/* Navigation End...... Thathsara*/
+/* ...................................... */
+.test {
+  width: 55px;
+  height: 55px;
+  fill: rgb(240, 88, 0);
 }
