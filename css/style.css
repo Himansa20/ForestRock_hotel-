@@ -32,7 +32,8 @@ body {
   display: flex;
   padding: 2rem;
   gap: 10rem;
-  box-shadow: 2px 7px 14px -1px rgba(0, 0, 0, 0.42);
+  /* box-shadow: 2px 7px 14px -1px rgba(0, 0, 0, 0.42); */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 .navigation > * {
   /* border: 1px solid; */
@@ -50,31 +51,29 @@ body {
   /* border: 1px solid; border......................................*/
   margin: 0 auto;
   padding: 0.5rem;
-  font-weight: 900;
-  background: var(--gradient-main);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-weight: 700;
 }
-.navigation-list {
+.navigation__menu-1,.navigation-list {
   display: flex;
   list-style: none;
   font-size: 1.6rem;
   padding: 0;
   gap: 3.2rem;
+  text-transform: uppercase;
+  align-items:center;
 }
 .navigation__list-items {
   border: 1px solid transparent;
-  /* box-shadow: -1px 5px 14px -3px rgba(0, 0, 0, 0.75); */
   padding: 0.9rem;
   transition: all 0.4s;
+  /* border: 1px solid; */
 }
+
 .navigation__list-items:hover {
   border: 1px solid;
 }
 
 .navigation__menu-1 {
-  display: flex;
-  align-items: center;
   padding: 0 0.5rem 0 0.5rem;
 }
 .navigation__list-items,
@@ -146,9 +145,10 @@ a {
   color: #fff;
   cursor: pointer;
   text-transform: uppercase;
-  font-weight: 800;
+  font-weight: 100;
   transition: all 0.3s;
   position: relative;
+  
 }
 .navigation-button--primary:hover {
   /* opacity: 0.8; */
