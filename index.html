@@ -10,11 +10,12 @@
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/animations.css">
 </head>
 
 <body>
 	<header>
-		<nav class="navigation">
+		<nav class="navigation fixed-nav">
 			<div class="navigation__logo">
 				<h2 class="navigation__logo-text">hotel forest rock</h2>
 			</div>
@@ -83,10 +84,50 @@
 				</div>
 			</div>
 		</nav>
-
 	</header>
 
-	<!-- <svg class="icon2">
+	<main class="home-main sticky-scroll">
+		<div class="home-main__text-container">
+			<h1 class="text-header">
+				<span class="text-header__small">into the</span>
+				<span class="text-header__big">Jungle</span>
+			</h1>
+
+			<p class="hotel-name">Hotel forest rock</p>
+			<p class="about-hotel">Nestled on the serene banks of the ForestRock Garden River and surrounded by
+				breathtaking landscapes, ForestRock Garden Hotel is a distinguished gem among riverfront hotels. Our
+				prestigious resort effortlessly combines the timeless allure of traditional hospitality with
+				contemporary comforts, ensuring our guests experience ultimate relaxation throughout their stay.
+				Offering top-tier services, a diverse array of luxurious accommodations, and gourmet dining options, we
+				create the perfect holiday retreat you've been dreaming of. Begin your day with stunning views from the
+				comfort of your room – watch the majestic wildlife roaming freely across the tranquil river – and
+				discover the true splendor of nature during your stay at our exclusive haven.</p>
+		</div>
+	</main>
+	<section aria-label="Newest Photos" class="sticky-scroll">
+		<div class="carousel" data-carousel>
+			<button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
+			<button class="carousel-button next" data-carousel-button="next">&#8658;</button>
+			<ul data-slides>
+				<li class="slide" data-active>
+					<img src="/images/ForestRock Imgs/pool.jpeg" alt="Nature Image #1">
+				</li>
+				<li class="slide">
+					<img src="/images/ForestRock Imgs/Faci.jpg">
+				</li>
+				<li class="slide">
+					<img src="/images/ForestRock Imgs/galaryImg.jpg" alt="Nature Image #3">
+				</li>
+			</ul>
+		</div>
+	</section>
+	<script src="/js/script.js"></script>
+</body>
+
+</html>
+
+
+<!-- <svg class="icon2">
 		<defs>
 			<linearGradient id="myGradient" x1="0%" y1="0%" x2="100%" y2="100%">
 				<stop offset="0%" style="stop-color: #7e3f0b; stop-opacity: 1" />
@@ -95,8 +136,3 @@
 		</defs>
 		<use xlink:href="images/sprite.svg#icon-Bar" fill="url(#myGradient)"></use>
 	</svg> -->
-
-	<script src="/js/script.js"></script>
-</body>
-
-</html>

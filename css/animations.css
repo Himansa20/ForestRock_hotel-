@@ -1,0 +1,15 @@
+.home-main__text-container {
+  animation: hotelp 2s 0.3s;
+  /* animation-fill-mode: backwards; */
+  animation-timing-function: ease-out;
+}
+
+@keyframes hotelp {
+  0% {
+    opacity: 0;
+    transform: translateX(-50rem);
+  }
+  100% {
+    opacity: 1;
+  }
+}
