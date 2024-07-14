@@ -10,6 +10,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/styleWedding&Function.css">
 </head>
 <body>
     <header>
@@ -20,13 +21,28 @@
 			<div class="navigation__menu-1">
 				<ul class="navigation-list">
 					<a href="#">
-						<li class="navigation__list-items">Rooms</li>
+						<li class="navigation__list-items">ROOMS</li>
 					</a>
 					<a href="#">
-						<li class="navigation__list-items">Offers</li>
+						<li class="navigation__list-items">OFFERS</li>
+					</a>
+					<a href="#">
+						<li class="navigation__list-items">DINING</li>
+					</a>
+					<a href="#">
+						<li class="navigation__list-items">FACILITIES</li>
+					</a>
+					<a href="#">
+						<li class="navigation__list-items">SPA</li>
+					</a>
+					<a href="#">
+						<li class="navigation__list-items">WEDDING & FUNCTIONS</li>
 					</a>
 					<a href="#">
 						<li class="navigation__list-items">Gallery</li>
+					</a>
+					<a href="#">
+						<li class="navigation__list-items">EXPERIENCE</li>
 					</a>
 				</ul>
 			</div>
@@ -50,7 +66,9 @@
 					<button class="button navigation-button--primary">Book now</button>
 			</div>
 				<div class="user">
-					<p>user</p>
+					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+						<path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+					</svg>
 				</div>
 			</div>
 		</nav>
@@ -64,10 +82,14 @@
         </div>
     </div>
 	
-    <div class="container text-center mt-5">
-        <h2 class="font-weight-bold">Memorable WEDDINGS</h2>
-        <p>Your perfect moments in Anuradhapura</p>
+    <div class="Wedding-section">
+        <h2 class="section-title">Memorable</h2>
+		<h1 class="main-title">WEDDINGS</h1>
+        <p class="sub-title">PICTURE PERFECT WEDDING IN ANURADHAPURA</p>
         <hr class="w-25 mx-auto">
+		<p class="description">
+            Part of what makes the Forest Rock Garden one of the best hotels in Anuradhapura is the amount of fantastic facilities we have available for all our guests. We all know just how important a vacation is after all, so we strive to provide you with the very best experience possible. Burn some calories at our feature-rich fitness center, visit our lounge to strike up some conversation or take a dip in our pool to escape the midday heat – the choice is up to you!
+        </p>
     </div>
 
     <div class="container-fluid p-0">
@@ -77,5 +99,69 @@
             </div>
         </div>
     </div>
+
+	<!--form-->
+	<div class="form-container">
+        <form id="inquiry-form">
+            <h2>INQUIRE NOW</h2>
+            <div class="form-group">
+                <label for="title">Title <span class="required">*</span></label>
+                <select id="title" name="title" required>
+                    <option value="">Select</option>
+                    <option value="Rev.">Rev.</option>
+                    <option value="Mr.">Mr.</option>
+                    <option value="Ms.">Ms.</option>
+                    <option value="Mrs.">Mrs.</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="first-name">First Name <span class="required">*</span></label>
+                <input type="text" id="first-name" name="first-name" required>
+            </div>
+            <div class="form-group">
+                <label for="last-name">Last Name <span class="required">*</span></label>
+                <input type="text" id="last-name" name="last-name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email <span class="required">*</span></label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="date">Date <span class="required">*</span></label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone <span class="required">*</span></label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="country">Country <span class="required">*</span></label>
+                <select id="country" name="country" required>
+                    <option value="">PLEASE SELECT</option>
+                    <option value="country1">Country 1</option>
+                    <option value="country2">Country 2</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="no-of-pax">No of Pax <span class="required">*</span></label>
+                <input type="number" id="no-of-pax" name="no-of-pax" required>
+            </div>
+            <div class="form-group">
+                <label for="comment">Comment</label>
+                <textarea id="comment" name="comment"></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit">SUBMIT</button>
+            </div>
+            <p class="required-fields">Required fields <span class="required">*</span></p>
+        </form>
+    </div>
+	<script>
+	document.getElementById('inquiry-form').addEventListener('submit', function(event) {
+		event.preventDefault();
+		alert('Form submitted!');
+	});
+	</script>
 </body>
 </html>
