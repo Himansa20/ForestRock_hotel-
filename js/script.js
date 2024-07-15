@@ -48,3 +48,19 @@ function moveToNextSlide(offset) {
 setInterval(() => {
     moveToNextSlide(1)
 }, 10000)
+
+//Certificate popup
+
+const certificateBtn = document.querySelector(".certificate-popup__btn");
+const certificate__img = document.querySelector(".certificate__img");
+const certificate = document.querySelector(".certificate");
+const overlay = document.querySelector(".overlay");
+
+certificateBtn.addEventListener('click', function () {
+    overlay.classList.remove("hidden");
+    certificate__img.classList.add("show-certificate");
+})
+overlay.addEventListener('click', function () {
+    overlay.classList.add("hidden");
+    certificate__img.classList.remove("show-certificate");
+})
