@@ -36,12 +36,14 @@ body {
   display: flex;
   padding: 1rem;
   gap: 6rem;
+
   /* box-shadow: 2px 7px 14px -1px rgba(0, 0, 0, 0.42); */
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
+
 .sticky-scroll {
-  position: sticky;
-  top: 0;
+  position: sticky !important;
+  top: 0 !important;
 }
 .navigation {
   position: sticky;
@@ -51,7 +53,7 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1000;
+  z-index: 10000;
   background-color: white; /* Adjust this if you want a different background color */
   /*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  Optional: Adds a shadow to the navbar */
 }
@@ -325,6 +327,7 @@ main.home-main {
   margin-left: 50%;
   transform: translateX(-50%);
   padding: 0.5rem;
+  margin-bottom: 4rem;
 }
 .text-header {
   /* border: 1px solid; */
@@ -365,13 +368,14 @@ main.home-main {
   text-transform: uppercase;
   font-size: 5.5rem;
   width: 255%;
+  border-bottom: 1px solid;
   letter-spacing: var(--letter-space-1);
   /* border: 1px solid; */
 }
 
 .carousel {
   height: 70vh;
-  position: relative;
+  /* position: relative; */
   /* padding-bottom: 120rem; */
 }
 
@@ -439,7 +443,8 @@ main.home-main {
 .certificate {
   width: 100%;
   height: 90vh;
-  /* border: 1px solid; */
+  padding-bottom: 1rem;
+  /* border: 1px solid red; */
   background-color: #fff;
   position: relative;
 }
@@ -560,4 +565,240 @@ main.home-main {
 .icon-list:hover > * {
   transform: scale(1.2);
 }
+.marging-small {
+  margin-top: 5rem;
+}
+.just-image {
+  width: 100%;
+  background-color: #fff;
+  border: 2px solid red;
+  position: relative;
+  z-index: 10000;
+}
+[alt="img-banner"] {
+  width: 100%;
+}
+.offers {
+  width: 100%;
+  height: 100vh;
+  background-color: #ffffff;
+  z-index: 9000000;
+  position: relative;
+  margin-top: -5rem;
+  border: 1px solid;
+  padding-bottom: 2rem;
+}
+.margin-top-text-container {
+  margin-top: -3.5rem;
+}
+.letter-modify {
+  display: inline-block;
+  /* border: 1px solid; */
+  position: relative;
+}
+[alt="letter-elephant"] {
+  width: 1.9rem;
+  position: absolute;
+  top: 51%;
+  transform: translate(-50%, -50%);
+  left: 48%;
+  border-radius: 5px;
+  opacity: 0.5;
+  z-index: -500;
+}
+.font-weight-big {
+  font-weight: 800;
+}
+.text-float {
+  margin-left: 100%;
+  font-weight: 400;
+}
+.offrers-card-containe {
+  width: 100%;
+  /* border: 1px solid; */
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+}
+.offrers-card-container__cards {
+  /* border: 1px solid; */
+  transition: all 0.2s;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.hotel-name-card {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  letter-spacing: 0;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.offrers-card-container__cards > * {
+  padding: 0.5rem;
+  /* border: 1px solid; */
+}
+.offer-presentage {
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+.offer-description {
+  font-size: 1.2rem;
+  margin-bottom: 5rem;
+}
+.more-link {
+  font-size: 1.5rem;
+  display: inline-block;
+  /* border: 1px solid; */
+  position: relative;
+}
+.offrers-card-container__cards:hover {
+  background-color: var(--hover-bgc);
+  transform: scale(1.1);
+}
+.rarr1 {
+  opacity: 0;
+  display: inline-block;
+  transition: all 0.3s ease;
+  position: absolute;
+  /* border: 1px solid; */
+}
 
+.offrers-card-container__cards:hover > .more-link {
+  /* border-bottom: 1px solid; */
+}
+.offrers-card-container__cards:hover .rarr1 {
+  opacity: 1;
+  transform: translateX(5px);
+}
+.rarr3 {
+  opacity: 0;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+.offrers-card-container__cards:hover .rarr3 {
+  opacity: 1;
+  transform: translateX(5px);
+}
+.view {
+  display: block;
+}
+.view-des {
+  display: block;
+  font-weight: 600;
+}
+.icon-flex {
+  display: flex;
+  /* border: 1px solid; */
+  gap: 4rem;
+  margin-top: 1.7rem;
+  font-size: 1.1rem;
+  transition: all 0.2s;
+}
+.view-des--weight {
+  display: inline-block;
+  font-weight: 700;
+}
+.location {
+  width: 100%;
+  background-color: #fff;
+  position: relative;
+  z-index: 100000000;
+  /* background-color: red; */
+  border: 1px solid;
+}
+.location-text--2 {
+  font-size: 2.3rem;
+}
+.distance {
+  display: flex;
+  /* border: 1px solid; */
+  gap: 1rem;
+  width: 40rem;
+  justify-content: end;
+}
+.from {
+  /* border: 1px solid; */
+  width: 8rem;
+}
+.meeters {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.from {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+/*Footer.............................*/
+.Footer-landing {
+  width: 100%;
+  height: 50vh;
+  background-color: rgb(255, 255, 255);
+  margin-top: -1rem;
+}
+.footer-landing__container {
+  display: flex;
+  /* border: 1px solid; */
+  /* justify-content: center; */
+  gap: 10rem;
+}
+.footer-landing__container > .container__childs:nth-child(4) {
+  margin-left: 30rem;
+}
+.footer-landing__container > .container__childs:nth-child(1) {
+  margin-left: 10rem;
+}
+.container__childs {
+  margin-top: 5rem;
+  padding-top: 3rem;
+  /* border: 1px solid; */
+}
+.footer__list {
+  list-style: none;
+  padding: 1rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.footer__list-items {
+  /* border: 1px solid; */
+  padding: 0.3rem;
+  padding-right: 2rem;
+  position: relative;
+}
+.footer__list-items:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+.rarr {
+  /* border: 1px solid; */
+  display: inline-block;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.8s;
+  backface-visibility: hidden;
+  color: #444444;
+}
+.footer__list-items:hover .rarr {
+  /* color: red; */
+  transform: translateX(5px);
+  opacity: 1;
+}
+.hotel-name-big {
+  width: max-content;
+
+  margin-left: 10rem;
+  padding: 1rem;
+}
+.hotel-name-big-letter {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.street {
+  width: 30rem;
+  /* border: 1px solid; */
+  padding: 1.6rem 0 1.6rem 0;
+  color: #b5c1d4;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border-top: 1px solid #b5c1d4;
+  border-bottom: 1px solid #b5c1d4;
+}
