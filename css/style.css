@@ -57,7 +57,7 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 10000;
+  z-index: 100000000000000;
   background-color: white; /* Adjust this if you want a different background color */
   /*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  Optional: Adds a shadow to the navbar */
 }
@@ -719,7 +719,7 @@ main.home-main {
   width: 100%;
   background-color: #fff;
   position: relative;
-  z-index: 10000;
+  z-index: 100000;
 }
 [alt="img-banner"] {
   width: 100%;
