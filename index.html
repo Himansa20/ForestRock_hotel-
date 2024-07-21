@@ -64,7 +64,43 @@
 					</div>
 
 					<div class="navigation__button">
-						<button class="button navigation-button--primary">Book now</button>
+						<button class="button navigation-button--primary" id="bookNowBtn">Book now</button>
+					</div>
+					<div class="nav__bokking-dropdown hide-booking" id="bookingDropdown">
+						<svg class="dot-horizo center-icon">
+							<use xlink:href="/images/sprite.svg#icon-cheveron-down"></use>
+						</svg>
+						<p class="hotel-name-dropdown">Forest Rock Garden</p>
+
+						<div class="calender-range">
+							<span class="datepicker-toggle">
+								<span class="datepicker-toggle-button"></span>
+								<input type="date" class="datepicker-input">
+							</span>
+							<span class="datepicker-toggle">
+								<span class="datepicker-toggle-button"></span>
+								<input type="date" class="datepicker-input">
+							</span>
+						</div>
+						<div class="booking-dates height-dates">
+							<p class="current-date bold"></p>
+							<p class="leave-date bold"></p>
+						</div>
+						<div class="booking-dates booking-dates-text">
+							<p class="current-date checking-text">Check-In</p>
+							<p class="leave-date checking-text">Check-out</p>
+						</div>
+						<div class="country-option">
+							<label for="country">Nationality</label>
+							<select>
+								<option selected value="0">Sri Lanka</option>
+								<option value="1">Foreign</option>
+							</select>
+
+						</div>
+						<div class="btn"><a href="#" class="btn-bk"><button
+									class="button navigation-button--primary btn--center">Book now</button></a>
+						</div>
 					</div>
 					<div class="nav__user">
 						<div class="nav__user-img">
@@ -325,8 +361,47 @@
 			</h1>
 			<p class="street">
 				No 341, Andarawewa, Trincomalee Road, Sinharagama
-				0252 033 000
+				<span class="street__mobile">0252 033 000</span>
 			</p>
+		</div>
+		<div class="footer-icons">
+			<div class="footer-icons__social-media">
+				<a href="#">
+					<svg class="social">
+						<use xlink:href="/images/sprite.svg#icon-facebook2"></use>
+					</svg>
+				</a>
+				<a href="#">
+					<svg class="social">
+						<use xlink:href="/images/sprite.svg#icon-instagram"></use>
+					</svg>
+				</a>
+				<a href="#">
+					<svg class="social">
+						<use xlink:href="/images/sprite.svg#icon-twitter"></use>
+					</svg>
+				</a>
+			</div>
+			<div class="footer-icons__hash-tag">
+				<p class="lets-get">Let's get social with</p>
+				<p class="hash-tag">#ForestRock</p>
+			</div>
+		</div>
+		<div class="stripe">
+			<div class="policy-tab">
+				<p class="policies"><a href="#">GDPR compliance</a></p>
+				<p class="policies"><a href="#">Privacy and policy</a></p>
+				<p class="policies"><a href="#">Terms and Condition</a></p>
+				<p class="policies"><a href="#">Site map</a></p>
+			</div>
+			<div class="copy-rights">
+				<p class="copy"><a href="#">&copy; 2024 Forest Rock Garden. All Rights Reserved</a></p>
+			</div>
+			<div class="group">
+				<p class="group-work">
+					<a href="#">Website Designed and Developed by GroupWeb</a>
+				</p>
+			</div>
 		</div>
 	</footer>
 	<script src="/js/script.js"></script>
