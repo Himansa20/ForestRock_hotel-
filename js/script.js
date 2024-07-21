@@ -128,7 +128,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const bookingDropdown = document.getElementById('bookingDropdown');
 
     bookNowBtn.addEventListener('click', (event) => {
-        event.stopPropagation(); // Prevent the click event from propagating to the document
+        event.stopPropagation();
         bookingDropdown.classList.toggle('hide-booking');
     });
 

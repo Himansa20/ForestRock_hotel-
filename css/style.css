@@ -101,6 +101,8 @@ body {
 
 .navigation__list-items:hover {
   border: 1px solid;
+  border-radius: 5px;
+  box-shadow: 1px 3px 13px -4px rgba(0, 0, 0, 0.75);
 }
 
 .navigation__menu-1 {
