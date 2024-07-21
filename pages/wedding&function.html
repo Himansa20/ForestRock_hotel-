@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Wedding & Functions</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
@@ -14,9 +14,9 @@
 </head>
 <body>
     <header>
-		<nav class="navigation">
+		<nav class="navigation fixed-nav">
 			<div class="navigation__logo">
-				<h2 class="navigation__logo-text">hotel forest rock</h2>
+				<h2 class="navigation__logo-text"><a href="#">hotel forest rock</a></h2>
 			</div>
 			<div class="navigation__menu-1">
 				<ul class="navigation-list">
@@ -24,144 +24,222 @@
 						<li class="navigation__list-items">ROOMS</li>
 					</a>
 					<a href="#">
-						<li class="navigation__list-items">OFFERS</li>
+						<li class="navigation__list-items">OFFERES</li>
 					</a>
 					<a href="#">
 						<li class="navigation__list-items">DINING</li>
 					</a>
-					<a href="#">
+                    <a href="#">
 						<li class="navigation__list-items">FACILITIES</li>
 					</a>
-					<a href="#">
+                    <a href="#">
 						<li class="navigation__list-items">SPA</li>
 					</a>
-					<a href="#">
-						<li class="navigation__list-items">WEDDING & FUNCTIONS</li>
+                    <a href="#">
+						<li class="navigation__list-items">WEDDING & FUNCTION</li>
 					</a>
-					<a href="#">
-						<li class="navigation__list-items">Gallery</li>
+                    <a href="#">
+						<li class="navigation__list-items">GALLERY</li>
 					</a>
-					<a href="#">
+                    <a href="#">
 						<li class="navigation__list-items">EXPERIENCE</li>
 					</a>
 				</ul>
 			</div>
-			<div class="navigation__menu-2">
-        <div class="navigation__search-bar">
-					<input type="search" class="searchbar" placeholder="Search...">
-					<button class="nav__search">
-						<svg class="search">
-							<use xlink:href="/images/sprite.svg#icon-search"></use>
-						</svg>
-					</button>
-		</div>
-			<div class="navigation__more-option">
-					<button class="nav__btn-dot">
-						<svg class="dot-horizo">
-							<use xlink:href="/images/sprite.svg#icon-dots-three-horizontal"></use>
-						</svg>
-					</button>
-			</div>
-			<div class="navigation__button">
-					<button class="button navigation-button--primary">Book now</button>
-			</div>
-				<div class="user">
-					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
-						<path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+			<div class="navigation__search-bar">
+				<input type="search" class="searchbar" placeholder="Search...">
+				<button class="nav__search">
+					<svg class="search">
+						<use xlink:href="/images/sprite.svg#icon-search"></use>
 					</svg>
+				</button>
+			</div>
+			<div class="navigation__menu-2">
+                <div class="navigation__more-option">
+                    <div class="btn-container">
+                        <button class="nav__btn-dot">
+                            <svg class="dot-horizo">
+                                <use xlink:href="/images/sprite.svg#icon-dots-three-horizontal"></use>
+                            </svg>
+                        </button>
+                        <div class="nav__more-option">
+                            <ul class="more-option__list">
+                                <li class="moreoption__list-items"><a href="#">Dining</a></li>
+                                <li class="moreoption__list-items"><a href="#">Facilities</a></li>
+                                <li class="moreoption__list-items"><a href="#">Spa</a></li>
+                                <li class="moreoption__list-items"><a href="#">Wedding and function</a></li>
+                                <li class="moreoption__list-items"><a href="#">Experience</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+				<div class="navigation__button">
+                    <button class="button navigation-button--primary">Book now</button>
+                </div>
+				<div class="nav__user">
+					<div class="nav__user-img">
+
+					</div>
+					<span class="icon-dropdown">
+						<svg class="dot-horizo">
+							<use xlink:href="/images/sprite.svg#icon-cheveron-down"></use>
+						</svg>
+					</span>
+					<ul class="user-option">
+						<li class="user-option__items--head">Account</li>
+						<li class="user-option__items"><a href="#">Settings</a></li>
+						<li class="user-option__items"><a href="#">Booking History</a></li>
+						<li class="user-option__items"><a href="#">Get Help</a></li>
+						<li class="user-option__items"><a href="#">Sign Out</a></li>
+					</ul>
 				</div>
 			</div>
 		</nav>
 	</header>
 
-    <div class="container-fluid p-0">
-        <div class="row no-gutters">
-            <div class="col-12">
-                <img src="/images/ForestRock Imgs/s1-1.jpg" class="img-fluid" alt="Wedding">
-            </div>
-        </div>
-    </div>
-	
-    <div class="Wedding-section">
-        <h2 class="section-title">Memorable</h2>
-		<h1 class="main-title">WEDDINGS</h1>
-        <p class="sub-title">PICTURE PERFECT WEDDING IN ANURADHAPURA</p>
-        <hr class="w-25 mx-auto">
-		<p class="description">
-            Part of what makes the Forest Rock Garden one of the best hotels in Anuradhapura is the amount of fantastic facilities we have available for all our guests. We all know just how important a vacation is after all, so we strive to provide you with the very best experience possible. Burn some calories at our feature-rich fitness center, visit our lounge to strike up some conversation or take a dip in our pool to escape the midday heat – the choice is up to you!
-        </p>
-    </div>
+    <div class="content nilame-guys">..</div>
+    
+    <main class="">
+		<div class="home-main__text-container">
+			<h1 class="text-header">
+				<span class="text-header__small" style="text-align: left; font-weight: 600;">Memorable</span>
+				<span class="text-header__big">WEDDINGS</span>
+			</h1>
 
-    <div class="container-fluid p-0">
-        <div class="row no-gutters">
-            <div class="col-12">
-                <img src="/images/ForestRock Imgs/a5.jpg" class="img-fluid" alt="Wedding">
-            </div>
-        </div>
-    </div>
+			<p class="hotel-name">PICTURE PERFEST WEDDINGs IN ANURADHAPURA</p>
+			<p class="about-hotel">Part of what makes the Forest Rock Garden one of the best hotels in Anuradhapura is the amount of fantastic 
+                facilities we have available for all our guests. We all know just how important a vacation is after all, so we strive to 
+                provide you with the very best experience possible. Burn some calories at our feature-rich fitness center, visit our 
+                lounge to strike up some conversation or take a dip in our pool to escape the midday heat the choice is up to you!</p>
+		</div>
+	</main>
 
+    <!--Outdoor image-->
+    <div class="content outdoor-guys">..</div>
 	<!--form-->
-	<div class="form-container">
+    <div class="formContent">
         <form id="inquiry-form">
-            <h2>INQUIRE NOW</h2>
-            <div class="form-group">
-                <label for="title">Title <span class="required">*</span></label>
-                <select id="title" name="title" required>
-                    <option value="">Select</option>
-                    <option value="Rev.">Rev.</option>
-                    <option value="Mr.">Mr.</option>
-                    <option value="Ms.">Ms.</option>
-                    <option value="Mrs.">Mrs.</option>
-                </select>
+            <!-- first row of form -->
+            <div class="formFirstSec">
+                <h2>INQURE NOW</h2>
+                <div class="form-group">
+                    <label for="title" class="title-h2">Title.<span class="required">*</span></label>
+                    <select id="title" name="title">
+                        <option value="rev">REV.</option>
+                        <option value="dr">DR.</option>
+                        <option value="mr">MR.</option>
+                        <option value="miss">MISS.</option>
+                        <option value="mrs">MRS.</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="title">First Name.<span class="required">*</span></label>
+                    <input type="text" name="first-name">
+                </div>
+                <div class="form-group">
+                    <label for="title">Last Name.<span class="required">*</span></label>
+                    <input type="text" name="last-name">
+                </div>
+                <div class="form-group">
+                    <label for="title">Email.<span class="required">*</span></label>
+                    <input type="text" name="email">
+                </div>
+            </div>
+
+            <!-- secondRow of form -->
+            <div class="formSecondSec">
+                <div class="form-group">
+                    <label for="date">Date.<span class="required">*</span></label>
+                    <input type="date" name="date">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone.<span class="required">*</span></label>
+                    <input type="text" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="country">Country<span class="required">*</span></label>
+                    <select id="country" name="country">
+                        <option value="#">Please Select</option>
+                        <option value="a">Abudabi</option>
+                        <option value="b">Baharain</option>
+                        <option value="c">Canada</option>
+                        <option value="d">Denmark</option>
+                        <option value="e">Eygpt</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="nop">No of Pax.<span class="required">*</span></label>
+                    <input type="text" name="pax">
+                </div>
+            </div>
+
+            <!--thirdRow of form-->
+            <div class="formThirdSec">
+                <div class="form-group">
+                    <label for="comment">Comment</label>
+                    <textarea id="comment" rows="10">...</textarea>
+                </div>
+            </div>
+            <!--forthRow of form-->
+            <div class="formForthSec">
+                <div class="form-group">
+                    <p class="required-field">Required Field<span class="required">*</span></p>
+                </div>
             </div>
             <div class="form-group">
-                <label for="first-name">First Name <span class="required">*</span></label>
-                <input type="text" id="first-name" name="first-name" required>
+                <button class="btn" type="submit">SUBMIT</button>
             </div>
-            <div class="form-group">
-                <label for="last-name">Last Name <span class="required">*</span></label>
-                <input type="text" id="last-name" name="last-name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email <span class="required">*</span></label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="date">Date <span class="required">*</span></label>
-                <input type="date" id="date" name="date" required>
-            </div>
-            <div class="form-group">
-                <label for="phone">Phone <span class="required">*</span></label>
-                <input type="tel" id="phone" name="phone" required>
-            </div>
-            <div class="form-group">
-                <label for="country">Country <span class="required">*</span></label>
-                <select id="country" name="country" required>
-                    <option value="">PLEASE SELECT</option>
-                    <option value="country1">Country 1</option>
-                    <option value="country2">Country 2</option>
-                    <!-- Add more options as needed -->
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="no-of-pax">No of Pax <span class="required">*</span></label>
-                <input type="number" id="no-of-pax" name="no-of-pax" required>
-            </div>
-            <div class="form-group">
-                <label for="comment">Comment</label>
-                <textarea id="comment" name="comment"></textarea>
-            </div>
-            <div class="form-group">
-                <button type="submit">SUBMIT</button>
-            </div>
-            <p class="required-fields">Required fields <span class="required">*</span></p>
         </form>
     </div>
-	<script>
-	document.getElementById('inquiry-form').addEventListener('submit', function(event) {
-		event.preventDefault();
-		alert('Form submitted!');
-	});
-	</script>
+    <!--form-->
+
+    <footer class="Footer-landing">
+		<div class="footer-landing__container">
+			<div class="container__childs">
+				<ul class="footer__list">
+					<li class="footer__list-items"><a href="#">Home</a>
+						<span class="rarr">
+							&rarr;
+						</span>
+
+					</li>
+					<li class="footer__list-items"><a href="#">Dining <span class="rarr">&rarr;</span></a></li>
+					<li class="footer__list-items"><a href="#">Location <span class="rarr">&rarr;</span></a></li>
+				</ul>
+			</div>
+			<div class="container__childs">
+				<ul class="footer__list">
+					<li class="footer__list-items"><a href="#">Rooms <span class="rarr">&rarr;</span></a></li>
+					<li class="footer__list-items"><a href="#">Facilities <span class="rarr">&rarr;</span></a></li>
+					<li class="footer__list-items"><a href="#">Experience <span class="rarr">&rarr;</span></a></li>
+				</ul>
+			</div>
+			<div class="container__childs">
+				<ul class="footer__list">
+					<li class="footer__list-items"><a href="#">Offers <span class="rarr">&rarr;</span></a></li>
+					<li class="footer__list-items"><a href="#">Wedding and Functions <span
+								class="rarr">&rarr;</span></a></li>
+					<li class="footer__list-items"><a href="#">Gallery <span class="rarr">&rarr;</span></a></li>
+				</ul>
+			</div>
+			<div class="container__childs">
+				<ul class="footer__list">
+					<li class="footer__list-items"><a href="#">Back to top <span class="rarr">&rarr;</span></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="hotel-name-big">
+			<h1 class="hotel-name-big-letter"><a>
+				ForestRock
+            </a>
+			</h1>
+			<p class="street">
+				No 341, Andarawewa, Trincomalee Road, Sinharagama
+				0252 033 000
+			</p>
+		</div>
+	</footer>
+    <script src="/js/script.js"></script>
+	<script src="/js/wed&Func.js"></script>
 </body>
 </html>
