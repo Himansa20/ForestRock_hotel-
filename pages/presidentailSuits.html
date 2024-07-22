@@ -8,13 +8,13 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="/css/style.css">
 	<link rel="stylesheet" href="/css/stylePresidental.css">
+	<link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
 	<header>
-		<nav class="navigation">
+		<nav class="navigation fixed-nav">
 			<div class="navigation__logo">
 				<h2 class="navigation__logo-text">hotel forest rock</h2>
 			</div>
@@ -31,32 +31,62 @@
 					</a>
 				</ul>
 			</div>
+			<div class="navigation__search-bar">
+				<input type="search" class="searchbar" placeholder="Search...">
+				<button class="nav__search">
+					<svg class="search">
+						<use xlink:href="/images/sprite.svg#icon-search"></use>
+					</svg>
+				</button>
+			</div>
 			<div class="navigation__menu-2">
-<div class="navigation__search-bar">
-					<input type="search" class="searchbar" placeholder="Search...">
-					<button class="nav__search">
-						<svg class="search">
-							<use xlink:href="/images/sprite.svg#icon-search"></use>
-						</svg>
-					</button>
-				</div>
+
 				<div class="navigation__more-option">
-					<button class="nav__btn-dot">
-						<svg class="dot-horizo">
-							<use xlink:href="/images/sprite.svg#icon-dots-three-horizontal"></use>
-						</svg>
-					</button>
+					<div class="btn-container">
+						<button class="nav__btn-dot">
+							<svg class="dot-horizo">
+								<use xlink:href="/images/sprite.svg#icon-dots-three-horizontal"></use>
+							</svg>
+						</button>
+						<div class="nav__more-option">
+							<ul class="more-option__list">
+								<li class="moreoption__list-items"><a href="#">Dining</a></li>
+								<li class="moreoption__list-items"><a href="#">Facilities</a></li>
+								<li class="moreoption__list-items"><a href="#">Spa</a></li>
+								<li class="moreoption__list-items"><a href="#">Wedding and function</a></li>
+								<li class="moreoption__list-items"><a href="#">Experience</a></li>
+							</ul>
+						</div>
+					</div>
+
 				</div>
+
 				<div class="navigation__button">
 					<button class="button navigation-button--primary">Book now</button>
 				</div>
-				<div class="user">
-					//hiii i am thrani
-					<p>user</p>
+				<div class="nav__user">
+					<div class="nav__user-img">
+
+					</div>
+					<span class="icon-dropdown">
+						<svg class="dot-horizo">
+							<use xlink:href="/images/sprite.svg#icon-cheveron-down"></use>
+						</svg>
+					</span>
+					<ul class="user-option">
+						<li class="user-option__items--head">Account</li>
+						<li class="user-option__items"><a href="#">Settings</a></li>
+						<li class="user-option__items"><a href="#">Booking history</a></li>
+						<li class="user-option__items"><a href="#">Get help</a></li>
+						<li class="user-option__items"><a href="#">Sing out</a></li>
+					</ul>
 				</div>
 			</div>
 		</nav>
 	</header>
+ <div class="Background_img">
+	<img src="/images/ForestRock Imgs/rooms ForestRockBig.jpg" alt="Presidential_suit">
+ </div>
 
 	</body>
 </html>
