@@ -1,0 +1,223 @@
+.roomDeluxe{
+    margin-top: 16rem;
+    /* width: 100%; */
+    margin-left: 12rem;
+    margin-right: 12rem;
+    height: 85vh;
+    background-image: url('/images/ForestRock Imgs/rooms\ ForestRockBig.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.imgMiddle{
+    margin-top: 16rem;
+    /* width: 100%; */
+    margin-left: 70rem;
+    margin-right: 12rem;
+    height: 85vh;
+    background-image: url('/images/ForestRock Imgs/DeluxPic.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.middleText{
+    margin-left: 70rem;
+    margin-top: 16rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transform: translate(-50%, -50%);
+}
+
+/* middleField */
+.deluxe-room {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+    border-bottom: 1px solid;
+}
+
+/* .room-image {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.content {
+    max-width: 800px;
+    width: 100%;
+}*/
+
+.content-mid h2 {
+    font-size: 60px;
+    position: relative;
+    top: 35%;
+    left: -11%;
+    /* margin-left: 22rem; */
+    /* position: relative; */
+    /* margin-bottom: 10px;*/
+    font-weight: 400;
+}
+
+.content-mid p {
+    font-size: 25px;
+    margin-bottom: 30px;
+    position: relative;
+    top: 35%;
+    left: 15.5%;
+    font-weight: normal;
+
+} 
+
+.amenities {
+    margin-top: 8rem;
+    display:flex;
+    /* height: 350px;
+    width: 80%; */
+    border: 1px solid;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.amenity {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 20px;
+}
+
+.amenity img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.amenity p {
+    font-size: 14px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.amenity span {
+    font-size: 14px;
+    color: darkgray;
+}
+
+.sideImg{
+    margin-top: 13rem;
+    /* width: 100%; */
+    margin-right: 50%;
+    height: 65vh;
+    background-image: url('/images/ForestRock Imgs/DeluxeRom.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+  /* cardStyles */
+.card {
+width: 190px;
+background: white;
+padding: .4em;
+border-radius: 6px;
+margin-top: 7rem;
+margin-left: 25%;
+}
+
+.card-image {
+    background-image: url('/images/ForestRock Imgs/Psuite.jpg');
+    background-color: rgb(236, 236, 236);
+    width: 100%;
+    height: 130px;
+    border-radius: 6px 6px 0 0;
+}
+
+.card-image:hover {
+transform: scale(0.98);
+}
+
+.category {
+/* text-transform: uppercase; */
+font-size: 15px;
+font-weight: bold;
+color: rgb(0, 0, 0);
+padding: 10px 7px 0;
+}
+
+.category:hover {
+cursor: pointer;
+}
+
+.heading {
+font-weight: 400;
+color: rgb(0, 0, 0);
+padding: 7px;
+}
+
+.heading:hover {
+cursor: pointer;
+}
+
+.author {
+color: gray;
+font-weight: 400;
+font-size: 11px;
+padding-top: 20px;
+}
+
+.name {
+    padding-left: 2rem;
+white-space: 10px;
+}
+
+.name:hover {
+cursor: pointer;
+}
+  /* stylesEnd */
+   
+.icon-flex{
+    display: flex;
+}  
+/* .img-containe{
+    position: relative;
+    border: 1px solid;
+    height: 100rem;
+    width: 99%;
+}
+[alt="DeluxPic"]{
+    width: 20rem;
+    display: block;
+   position: absolute;
+    border: 1px solid;
+    left:100%;
+}  */
+.img-containe {
+    position: relative;
+    /* border: 1px solid; */
+    height: 35rem;
+    width: 99%;
+    overflow: hidden; /* Ensures no overflow from absolute positioning */
+}
+
+.img-containe img {
+    width: 65%;
+    height: auto;
+    position:absolute;
+    top: 35%;
+    left: 50%;
+    margin-left: 22rem;
+    /* padding-right: 2px; */
+    transform: translate(-50%, -50%);
+    /* border: 10px solid; */
+}
+.booking-part{
+    margin-top: 13rem;
+    display: flex;
+}
+.headingBook{
+    text-transform: uppercase;
+    font-weight: 400;
+    padding-left: 7.5rem;
+    font-size: 20px;
+}
