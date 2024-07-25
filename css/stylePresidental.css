@@ -20,11 +20,13 @@ body {
 }
 
 .Background_img {
-  height: 100vh;
+  height: 50vh;
   border: 1px solid red;
   width: 100vw;
+  margin-top: 10rem;
   /* margin-top: 12rem; */
 }
+
 /* [alt="Presidential_suit"] {
   width: 90%;
   margin-left: 50%;
