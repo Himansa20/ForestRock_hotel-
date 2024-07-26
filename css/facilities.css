@@ -1,0 +1,14 @@
+.mainView{
+    margin-top: 20rem;
+    
+    margin-right: 10rem;
+    /* border: 1px solid black; */
+    background-repeat: no-repeat;
+    background-position: center;
+    /* margin: 0 0 12rem 12rem; */
+    background-size: cover;
+
+    height: 45vh;
+    background-image: url("/images/ForestRock Imgs/HMOffer.jpg");
+}
+
