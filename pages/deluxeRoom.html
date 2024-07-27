@@ -91,8 +91,8 @@
 						<div class="country-option">
 							<label for="country">Nationality</label>
 							<select>
-								<option selected value="0">Sri Lanka</option>
-								<option value="1">Foreign</option>
+								<option selected value="0">Sri Lankan</option>
+								<option value="1">Non Sri Lankan</option>
 							</select>
 
 						</div>
@@ -157,8 +157,7 @@
 					<span class="view">OCCUPANCY</span>
 					<span class="view-des">02 ADULTS</span>
 				</p>
-			</div>
-			
+			</div>	
 		</div>
 		<div class="img-containe">
 			<img src="/images/ForestRock Imgs/DeluxPic.jpg" alt="DeluxPic">
@@ -196,20 +195,67 @@
 			<div class="imgSide">
 				<img src="/images/ForestRock Imgs/DeluxeRom.jpg">
 			</div>
-			<div class="bookingBar">
+			<!-- <div class="bookingBar">
 				<h3 class="headingBook">Check Availability</h3>
+			</div> -->
+
+			<div class="check-availability-card">
+				<h2>CHECK AVAILABILITY</h2>
+				<p>Forest Rock Garden</p>
+				<form id="availability-form">
+					<div class="checkDate">
+						<label for="checkin">Check-in</label>
+						<input type="date" id="checkin" name="checkin" required>
+						
+						<label for="checkout">Check-out</label>
+						<input type="date" id="checkout" name="checkout" required>
+					</div>
+					
+					<div class="nationalityCheck">
+						<label for="nationality">Nationality</label>
+						<select id="nationality" name="nationality" required>
+							<option value="" disabled selected>Nationality</option>
+							<option value="srilankan">Sri Lankan</option>
+							<option value="non-srilankan">Non Sri Lankan</option>
+						</select>
+					</div>
+					
+					<button type="submit">BOOK NOW</button>
+				</form>
 			</div>
 		</div>
-		<section>
-			<div class="card">
-				<div class="card-image"></div>
-				<div class="category"> Presidential Suite </div>
-				<div class="heading"> Experience an exclusive stay in a historic city by choosing our Presidential Suite.
-					<div class="author"><a href="#"> More</a> <span class="name"> </span> <a>BOOK NOW</a></div>
-				</div>
-			</div>
-		</section>
 	</div>
+
+	<div class="room-card">
+        <div class="card">
+			<h2>Other Room Types</h2>
+            <img src="/images/ForestRock Imgs/Psuite.jpg" alt="Presidential Suite">
+            <div class="card-content">
+                <h3>Presidential Suite</h3>
+                <p>Experience an exclusive stay in a historic city by choosing our Presidential Suite.</p>
+                <div class="room-details">
+                    <div class="room-size">
+                        <div class="imgClass">
+							<img src="/Svg/squre.svg" alt="Room Size">
+							<span>Room Size</span>
+							<span>65 SQM</span>
+						</div>
+                    </div>
+                    <div class="occupancy">
+                        <div class="imgClass">
+							<img src="/Svg/newUser.svg" alt="Occupancy">
+							<span>Occupancy</span>
+                        	<span>04 ADULTS</span>
+						</div>
+                    </div>
+                </div>
+                <div class="card-actions">
+                    <a href="#" class="more">More</a>
+                    <a href="#" class="book-now">BOOK NOW</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
 	<footer class="Footer-landing">
 		<div class="footer-landing__container">

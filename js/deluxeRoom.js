@@ -24,3 +24,18 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+// middleBookingPart
+document.getElementById('availability-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const checkin = document.getElementById('checkin').value;
+    const checkout = document.getElementById('checkout').value;
+    const nationality = document.getElementById('nationality').value;
+
+    console.log('Check-in:', checkin);
+    console.log('Check-out:', checkout);
+    console.log('Nationality:', nationality);
+
+    // You can add further logic here, such as sending the data to a server
+});
