@@ -33,5 +33,100 @@ margin-top: 12rem;
     margin-left: 50%;
     transform: translateX(-50%);
 
+<<<<<<< Updated upstream
     border: 1px solid red;
 }
+=======
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.Background_img {
+  /* border: 1px solid; */
+  height: 50rem;
+  overflow: hidden;
+  margin-top: 10rem;
+}
+
+[alt="roomsImg"] {
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+
+.home-main__text-container {
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+
+.about-hotel {
+  margin-bottom: 0px;
+}
+
+.name-modifi {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+
+.presidential-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.icon-comment {
+  border: none;
+  white-space: nowrap;
+  margin-left: 5px;
+}
+.icon-item {
+  width: 85 px;
+  height: 85px;
+  margin-right: 5px;
+  margin-left: 0px;
+}
+
+
+.icon-list {
+  border: none;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.view {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.view-des {
+  display: block;
+  font-weight: bold;
+}
+
+[alt="Presidential_suit"] {
+  width: 90%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+
+  border: 1px solid red;
+}
+
+
+
+
+>>>>>>> Stashed changes
