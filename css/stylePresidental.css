@@ -1,42 +1,33 @@
-
 * {
-    margin: 0;
-    padding: 0;
-  }
-  
-  *,
-  *::after,
-  *::before {
-    box-sizing: inherit;
-  }
-  
-  html {
-    box-sizing: border-box;
-    font-size: 62.5%;
-  }
-  
-  body {
-    font-family: "Inter", sans-serif;
-    scroll-behavior: smooth;
-  }
-  
-.Background_img{
-height: 78.5rem;
-border: 1px solid red;
-width: 100%;
-margin-top: 12rem;
-
-
+  margin: 0;
+  padding: 0;
 }
-[alt="Presidential_suit"]{
-    width: 90%;
-    margin-left: 50%;
-    transform: translateX(-50%);
 
-<<<<<<< Updated upstream
-    border: 1px solid red;
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
 }
-=======
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.Background_img {
+  height: 50vh;
+  border: 1px solid red;
+  width: 100vw;
+  margin-top: 10rem;
+  /* margin-top: 12rem; */
+}
+
+
 *,
 *::after,
 *::before {
@@ -118,15 +109,3 @@ body {
   font-weight: bold;
 }
 
-[alt="Presidential_suit"] {
-  width: 90%;
-  margin-left: 50%;
-  transform: translateX(-50%);
-
-  border: 1px solid red;
-}
-
-
-
-
->>>>>>> Stashed changes

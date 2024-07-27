@@ -1,0 +1,41 @@
+.home-main__text-container {
+  animation: hotelp 2s 0.3s;
+  /* animation-fill-mode: backwards; */
+  animation-timing-function: ease-out;
+}
+
+@keyframes hotelp {
+  0% {
+    opacity: 0;
+    transform: translateX(-50rem);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes certificatePopup {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  /* 50% {
+    opacity: 0.9;
+    transform: scale(0.5);
+  } */
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.show-certificate {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  z-index: 50000;
+}
+[alt="certificate"] {
+  width: 35rem;
+  animation: certificatePopup 0.5s;
+}

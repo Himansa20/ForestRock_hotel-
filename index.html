@@ -9,41 +9,27 @@
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/animations.css">
 </head>
-
 <body>
-	<header>
-		<nav class="navigation">
-			<div class="navigation__logo">
-				<h2 class="navigation__logo-text">hotel forest rock</h2>
-			</div>
-			<div class="navigation__menu-1">
-				<ul class="navigation-list">
-					<a href="#">
-						<li class="navigation__list-items">Rooms</li>
-					</a>
-					<a href="#" class="test">
-						<li class="navigation__list-items">Offers</li>
-					</a>
-					<a href="#" class="test">
-						<li class="navigation__list-items">Gallery</li>
-					</a>
-				</ul>
-			</div>
-			<div class="navigation__menu-2">
-
-				<div class="navigation__more-option">
-					<button class="nav__btn-dot">
-						<svg>
-							<use xlink:href="/images/sprite.svg#"></use>
-						</svg>
-					</button>
+	<div>
+		<header>
+			<nav class="navigation fixed-nav">
+				<div class="navigation__logo">
+					<h2 class="navigation__logo-text">hotel forest rock</h2>
 				</div>
-				<div class="navigation__button">
-					<button class="button navigation-button--primary">Book now</button>
-				</div>
-				<div class="user">
-					<p>user</p>
+				<div class="navigation__menu-1">
+					<ul class="navigation-list">
+						<a href="#">
+							<li class="navigation__list-items">Rooms</li>
+						</a>
+						<a href="#">
+							<li class="navigation__list-items">Offers</li>
+						</a>
+						<a href="#">
+							<li class="navigation__list-items">Gallery</li>
+						</a>
+					</ul>
 				</div>
 				<div class="navigation__search-bar">
 					<input type="search" class="searchbar" placeholder="Search...">
@@ -53,14 +39,374 @@
 						</svg>
 					</button>
 				</div>
-			</div>
-		</nav>
-		<svg class="test">
-			<use xlink:href="/images/sprite.svg#icon-tag"></use>
-		</svg>
-	</header>
+				<div class="navigation__menu-2">
+					<div class="navigation__more-option">
+						<div class="btn-container">
+							<button class="nav__btn-dot">
+								<svg class="dot-horizo">
+									<use xlink:href="/images/sprite.svg#icon-dots-three-horizontal"></use>
+								</svg>
+							</button>
+							<div class="nav__more-option">
+								<ul class="more-option__list">
+									<li class="moreoption__list-items"><a href="#">Dining</a></li>
+									<li class="moreoption__list-items"><a href="#">Facilities</a></li>
+									<li class="moreoption__list-items"><a href="#">Spa</a></li>
+									<li class="moreoption__list-items"><a href="#">Wedding and function</a></li>
+									<li class="moreoption__list-items"><a href="#">Experience</a></li>
+								</ul>
+							</div>
+						</div>
 
-	<!-- <svg class="icon2">
+					</div>
+
+					<div class="navigation__button">
+						<button class="button navigation-button--primary" id="bookNowBtn">Book now</button>
+					</div>
+					<div class="nav__bokking-dropdown hide-booking" id="bookingDropdown">
+						<svg class="dot-horizo center-icon">
+							<use xlink:href="/images/sprite.svg#icon-cheveron-down"></use>
+						</svg>
+						<p class="hotel-name-dropdown">Forest Rock Garden</p>
+
+						<div class="calender-range">
+							<span class="datepicker-toggle">
+								<span class="datepicker-toggle-button"></span>
+								<input type="date" class="datepicker-input">
+							</span>
+							<span class="datepicker-toggle">
+								<span class="datepicker-toggle-button"></span>
+								<input type="date" class="datepicker-input">
+							</span>
+						</div>
+						<div class="booking-dates height-dates">
+							<p class="current-date bold"></p>
+							<p class="leave-date bold"></p>
+						</div>
+						<div class="booking-dates booking-dates-text">
+							<p class="current-date checking-text">Check-In</p>
+							<p class="leave-date checking-text">Check-out</p>
+						</div>
+						<div class="country-option">
+							<label for="country">Nationality</label>
+							<select>
+								<option selected value="0">Sri Lanka</option>
+								<option value="1">Foreign</option>
+							</select>
+
+						</div>
+						<div class="btn"><a href="#" class="btn-bk"><button
+									class="button navigation-button--primary btn--center">Book now</button></a>
+						</div>
+					</div>
+					<div class="nav__user">
+						<div class="nav__user-img">
+
+						</div>
+						<span class="icon-dropdown">
+							<svg class="dot-horizo">
+								<use xlink:href="/images/sprite.svg#icon-cheveron-down"></use>
+							</svg>
+						</span>
+						<ul class="user-option">
+							<li class="user-option__items--head">Account</li>
+							<li class="user-option__items"><a href="#">Settings</a></li>
+							<li class="user-option__items"><a href="#">Booking history</a></li>
+							<li class="user-option__items"><a href="#">Get help</a></li>
+							<li class="user-option__items"><a href="#">Sing out</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<!-- Navigation end............................................ -->
+		<main class="home-main sticky-scroll">
+			<div class="home-main__text-container">
+				<h1 class="text-header">
+					<span class="text-header__small">into the</span>
+					<span class="text-header__big">Jungle</span>
+				</h1>
+
+				<p class="hotel-name">Hotel forest rock</p>
+				<p class="about-hotel">Nestled on the serene banks of the ForestRock Garden River and surrounded by
+					breathtaking landscapes, ForestRock Garden Hotel is a distinguished gem among riverfront hotels. Our
+					prestigious resort effortlessly combines the timeless allure of traditional hospitality with
+					contemporary comforts, ensuring our guests experience ultimate relaxation throughout their stay.
+					Offering top-tier services, a diverse array of luxurious accommodations, and gourmet dining options,
+					we
+					create the perfect holiday retreat you've been dreaming of. Begin your day with stunning views from
+					the
+					comfort of your room – watch the majestic wildlife roaming freely across the tranquil river – and
+					discover the true splendor of nature during your stay at our exclusive haven.</p>
+			</div>
+		</main>
+		<section aria-label="Newest Photos" class="sticky-scroll carousel">
+			<div class="carousel" data-carousel>
+				<button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
+				<button class="carousel-button next" data-carousel-button="next">&#8658;</button>
+				<ul data-slides>
+					<li class="slide" data-active>
+						<img src="/images/ForestRock Imgs/pool.jpeg" alt="Nature Image #1">
+					</li>
+					<li class="slide">
+						<img src="/images/ForestRock Imgs/Faci.jpg">
+					</li>
+					<li class="slide">
+						<img src="/images/ForestRock Imgs/galaryImg.jpg" alt="Nature Image #3">
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="certificate sticky-scroll">
+			<div class="overlay hidden"></div>
+			<div class="certificate__img">
+				<img src="/images/ForestRock Imgs/certificate.jpg" alt="certificate">
+			</div>
+			<div class="certificate__content-container">
+				<div class="booking-paragraph">
+					<h2 class="text-heading">Why Book With US ?</h2>
+					<p class="booking-paragraph-text">
+						From a host of premium accommodation options that come replete with a myriad of luxurious
+						amenities
+						to class-leading services, there are plenty of reasons as to why you should plan your stay with
+						us.
+						Here are four such reasons as to why planning a stay with us is an excellent idea!
+					</p>
+				</div>
+				<div class="certificate-popup">
+					<img src="/images/ForestRock Imgs/safetravels.png" alt="safe-traveler-img">
+					<p class="certificate-popup__btn">view certificate</p>
+				</div>
+				<div class="traveller-choice-img">
+					<img src="/images/ForestRock Imgs/best-hotel-award.png" alt="traveller-choice-img">
+				</div>
+			</div>
+			<div class="icon-container">
+				<div class=" icon-list">
+					<svg class="icon-item">
+						<use xlink:href="/images/sprite.svg#icon-temple"></use>
+					</svg>
+					<p class="icon-paragraph">
+						WALKING DISTANCE FROM CULTURAL ATTRACTIONS IN ANURADHAPURA!
+					</p>
+				</div>
+				<div class="icon-list">
+					<svg class="icon-item">
+						<use xlink:href="/images/sprite.svg#icon-Rock-1"></use>
+					</svg>
+					<p class="icon-paragraph">
+						IMMACULATE VISTAS OF THISSA LAKE
+					</p>
+				</div>
+				<div class="icon-list">
+					<svg class="icon-item">
+						<use xlink:href="/images/sprite.svg#icon-Bench"></use>
+					</svg>
+					<p class="icon-paragraph">
+						SURREAL SURROUNDINGS IDEAL FOR RELAXATION
+					</p>
+				</div>
+				<div class="icon-list">
+					<svg class="icon-item">
+						<use xlink:href="/images/sprite.svg#icon-Bed"></use>
+					</svg>
+					<p class="icon-paragraph">
+						REASONABLE RATES FOR EXCLUSIVE ACCOMMODATIONS
+					</p>
+				</div>
+			</div>
+		</section>
+		<div class="just-image">
+			<img src="/images/ForestRock Imgs/img-banner.jpg" alt="img-banner">
+		</div>
+		<section class="offers sticky-scroll">
+			<div class="home-main__text-container margin-top-text-container">
+				<h1 class="text-header marging-small font-weight-big">
+					<span class="text-header__small text-float">Exclusive</span>
+					<span class="text-header__big"><span class="letter-modify">
+							O
+							<img src="images/ForestRock Imgs/elephant.jpeg" alt="letter-elephant">
+						</span>ffers</span>
+				</h1>
+
+				<p class="hotel-name">Hotel forest rock</p>
+				<p class="about-hotel">From well-curated deals for extended stays to unbeatable discounts for advance
+					purchases, our special offers not only gives you the best value for money but also significantly
+					contributes to a memorable and hassle-free holiday experience!</p>
+			</div>
+			<div class="offrers-card-containe">
+				<div class="offrers-card-container__cards">
+					<p class="hotel-name hotel-name-card">Hotel forest rock</p>
+					<p class="offer-presentage">30% off on Christmas</p>
+					<p class="offer-description">Enjoy a lavish stay with 30% discount</p>
+					<a href="#" class="more-link">More<span class="rarr1">&rarr;</span></a>
+				</div>
+				<div class="offrers-card-container__cards">
+					<p class="hotel-name hotel-name-card">Hotel forest rock</p>
+					<p class="offer-presentage">Royal High Tea</p>
+					<p class="offer-description">
+						Indulge regal luxury with Royal High @ ForestRock Garden
+					</p>
+					<a href="#" class="more-link">More <span class="rarr3">&rarr;</span></a>
+				</div>
+			</div>
+			<div class="icon-container">
+				<div class=" icon-list">
+					<svg class="icon-item">
+						<use xlink:href="/images/sprite.svg#icon-Lake"></use>
+					</svg>
+					<p class="icon-paragraph">
+						<span class="view">View</span>
+						<span class="view-des">Lake view</span>
+					</p>
+				</div>
+				<div class="icon-list">
+					<svg class="icon-item">
+						<use xlink:href="/images/sprite.svg#icon-User"></use>
+					</svg>
+					<p class="icon-paragraph">
+						<span class="view">Occupancy</span>
+						<span class="view-des">4 Adults</span>
+					</p>
+				</div>
+				<div class="icon-list">
+					<svg class="icon-item">
+						<use xlink:href="/images/sprite.svg#icon-customer"></use>
+					</svg>
+					<div class="icon-flex">
+						<div class="check-in">
+							<span class="view">Check-in</span>
+							<span class="view-des view-des--weight">2.00pm</span>
+						</div>
+						<div class="check-out">
+							<span class="view">Check-out</span>
+							<span class="view-des view-des--weight">12.00 noon</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="location sticky-scroll">
+			<div class="home-main__text-container margin-top-text-container">
+				<h1 class="text-header marging-small font-weight-big">
+					<span class="text-header__small text-float">Convenient</span>
+					<span class="text-header__big">L<span class="letter-modify">
+							O
+							<img src="images/ForestRock Imgs/elephant.jpeg" alt="letter-elephant">
+						</span>cation</span>
+				</h1>
+				<div class="distance">
+					<p class="meeters">500M</p>
+					<p class="from">From Sinharagama</p>
+				</div>
+				<p class="hotel-name">Hotel forest rock</p>
+
+				<p class="about-hotel">Located a few minute's drive away from Sinharagama - one of the quintessential
+					points
+					that make up the cultural triangle. Our resort property is easily accessible from any part of the
+					island. Forest Rock Garden is also placed amidst the region's most iconic attractions offering you
+					easy
+					passage to a myriad of enticing expeditions so that you can craft a spectacular holiday experience!
+				</p>
+			</div>
+			<iframe
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3948.150104250475!2d80.2804279740596!3d8.287856400151712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afcf7573ade9b95%3A0x9283970872d6e76a!2sForest%20Rock%20Garden%20-%20Anuradhapura!5e0!3m2!1sen!2slk!4v1721403765859!5m2!1sen!2slk"
+				width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+				referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</section>
+	</div>
+
+	<footer class="Footer-landing">
+		<div class="footer-landing__container">
+			<div class="container__childs">
+				<ul class="footer__list">
+					<li class="footer__list-items"><a href="#">Home</a>
+						<span class="rarr">
+							&rarr;
+						</span>
+
+					</li>
+					<li class="footer__list-items"><a href="#">Dining <span class="rarr">&rarr;</span></a></li>
+					<li class="footer__list-items"><a href="#">Location <span class="rarr">&rarr;</span></a></li>
+				</ul>
+			</div>
+			<div class="container__childs">
+				<ul class="footer__list">
+					<li class="footer__list-items"><a href="#">Rooms <span class="rarr">&rarr;</span></a></li>
+					<li class="footer__list-items"><a href="#">Facilities <span class="rarr">&rarr;</span></a></li>
+					<li class="footer__list-items"><a href="#">Experience <span class="rarr">&rarr;</span></a></li>
+				</ul>
+			</div>
+			<div class="container__childs">
+				<ul class="footer__list">
+					<li class="footer__list-items"><a href="#">Offers <span class="rarr">&rarr;</span></a></li>
+					<li class="footer__list-items"><a href="#">Wedding and Functions <span
+								class="rarr">&rarr;</span></a></li>
+					<li class="footer__list-items"><a href="#">Gallery <span class="rarr">&rarr;</span></a></li>
+				</ul>
+			</div>
+			<div class="container__childs">
+				<ul class="footer__list">
+					<li class="footer__list-items"><a href="#">Back to top <span class="rarr">&rarr;</span></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="hotel-name-big">
+			<h1 class="hotel-name-big-letter">
+				ForestRock
+			</h1>
+			<p class="street">
+				No 341, Andarawewa, Trincomalee Road, Sinharagama
+				<span class="street__mobile">0252 033 000</span>
+			</p>
+		</div>
+		<div class="footer-icons">
+			<div class="footer-icons__social-media">
+				<a href="#">
+					<svg class="social">
+						<use xlink:href="/images/sprite.svg#icon-facebook2"></use>
+					</svg>
+				</a>
+				<a href="#">
+					<svg class="social">
+						<use xlink:href="/images/sprite.svg#icon-instagram"></use>
+					</svg>
+				</a>
+				<a href="#">
+					<svg class="social">
+						<use xlink:href="/images/sprite.svg#icon-twitter"></use>
+					</svg>
+				</a>
+			</div>
+			<div class="footer-icons__hash-tag">
+				<p class="lets-get">Let's get social with</p>
+				<p class="hash-tag">#ForestRock</p>
+			</div>
+		</div>
+		<div class="stripe">
+			<div class="policy-tab">
+				<p class="policies"><a href="#">GDPR compliance</a></p>
+				<p class="policies"><a href="#">Privacy and policy</a></p>
+				<p class="policies"><a href="#">Terms and Condition</a></p>
+				<p class="policies"><a href="#">Site map</a></p>
+			</div>
+			<div class="copy-rights">
+				<p class="copy"><a href="#">&copy; 2024 Forest Rock Garden. All Rights Reserved</a></p>
+			</div>
+			<div class="group">
+				<p class="group-work">
+					<a href="#">Website Designed and Developed by GroupWeb</a>
+				</p>
+			</div>
+		</div>
+	</footer>
+	<script src="/js/script.js"></script>
+</body>
+</html>
+
+
+<!-- <svg class="icon2">
 		<defs>
 			<linearGradient id="myGradient" x1="0%" y1="0%" x2="100%" y2="100%">
 				<stop offset="0%" style="stop-color: #7e3f0b; stop-opacity: 1" />
@@ -69,8 +415,3 @@
 		</defs>
 		<use xlink:href="images/sprite.svg#icon-Bar" fill="url(#myGradient)"></use>
 	</svg> -->
-
-
-</body>
-
-</html>

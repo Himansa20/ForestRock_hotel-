@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>DeluxeRoom</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/animations.css">
+	<link rel="stylesheet" href="/css/styleDeluxe.css">
+</head>
+<body>
+	<div>
+		<header>
+			<nav class="navigation fixed-nav">
+				<div class="navigation__logo">
+					<h2 class="navigation__logo-text">hotel forest rock</h2>
+				</div>
+				<div class="navigation__menu-1">
+					<ul class="navigation-list">
+						<a href="#">
+							<li class="navigation__list-items">ROOMS</li>
+						</a>
+						<a href="#">
+							<li class="navigation__list-items">OFFERS</li>
+						</a>
+						<a href="#">
+							<li class="navigation__list-items">GALLERY</li>
+						</a>
+					</ul>
+				</div>
+				<div class="navigation__search-bar">
+					<input type="search" class="searchbar" placeholder="Search...">
+					<button class="nav__search">
+						<svg class="search">
+							<use xlink:href="/images/sprite.svg#icon-search"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="navigation__menu-2">
+					<div class="navigation__more-option">
+						<div class="btn-container">
+							<button class="nav__btn-dot">
+								<svg class="dot-horizo">
+									<use xlink:href="/images/sprite.svg#icon-dots-three-horizontal"></use>
+								</svg>
+							</button>
+							<div class="nav__more-option">
+								<ul class="more-option__list">
+									<li class="moreoption__list-items"><a href="#">Dining</a></li>
+									<li class="moreoption__list-items"><a href="#">Facilities</a></li>
+									<li class="moreoption__list-items"><a href="#">Spa</a></li>
+									<li class="moreoption__list-items"><a href="#">Wedding and function</a></li>
+									<li class="moreoption__list-items"><a href="#">Experience</a></li>
+								</ul>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="navigation__button">
+						<button class="button navigation-button--primary" id="bookNowBtn">Book now</button>
+					</div>
+					<div class="nav__bokking-dropdown hide-booking" id="bookingDropdown">
+						<svg class="dot-horizo center-icon">
+							<use xlink:href="/images/sprite.svg#icon-cheveron-down"></use>
+						</svg>
+						<p class="hotel-name-dropdown">Forest Rock Garden</p>
+
+						<div class="calender-range">
+							<span class="datepicker-toggle">
+								<span class="datepicker-toggle-button"></span>
+								<input type="date" class="datepicker-input">
+							</span>
+							<span class="datepicker-toggle">
+								<span class="datepicker-toggle-button"></span>
+								<input type="date" class="datepicker-input">
+							</span>
+						</div>
+						<div class="booking-dates height-dates">
+							<p class="current-date bold"></p>
+							<p class="leave-date bold"></p>
+						</div>
+						<div class="booking-dates booking-dates-text">
+							<p class="current-date checking-text">CHECK-IN</p>
+							<p class="leave-date checking-text">CHECK-OUT</p>
+						</div>
+						<div class="country-option">
+							<label for="country">Nationality</label>
+							<select>
+								<option selected value="0">Sri Lanka</option>
+								<option value="1">Foreign</option>
+							</select>
+
+						</div>
+						<div class="btn"><a href="#" class="btn-bk"><button
+									class="button navigation-button--primary btn--center">Book now</button></a>
+						</div>
+					</div>
+					<div class="nav__user">
+						<div class="nav__user-img">
+
+						</div>
+						<span class="icon-dropdown">
+							<svg class="dot-horizo">
+								<use xlink:href="/images/sprite.svg#icon-cheveron-down"></use>
+							</svg>
+						</span>
+						<ul class="user-option">
+							<li class="user-option__items--head">Account</li>
+							<li class="user-option__items"><a href="#">Settings</a></li>
+							<li class="user-option__items"><a href="#">Booking History</a></li>
+							<li class="user-option__items"><a href="#">Get Help</a></li>
+							<li class="user-option__items"><a href="#">Sign Out</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<!-- Navigation end............................................ -->
+		<div class="content roomDeluxe">..</div>
+
+		<main class="home-main">
+			<div class="home-main__text-container">
+				<h1 class="text-header">
+					<span class="text-header__small">Deluxe Room</span>
+					<span class="text-header__big">STAY</span>
+				</h1>
+
+				<p class="hotel-name">FOF A PLUSH & COSY STAY IN ANURADHAPURA</p>
+				<p class="about-hotel">Boasting a chic and contemporary design, our Deluxe Rooms are regarded as one of the be
+					st accommodation options amongst luxury hotels in Anuradhapura Sri Lanka. These rooms come replete with a host
+					 of modern and eco-friendly amenities and are outfitted with cosy beddings and plush furniture. As a bonus, most of the Deluxe
+					  Rooms offer our guests an exclusive view of the Thissa lake reservoirs and their immaculate surroundings. In addition to this, 
+					  the abode also offers our guests a host of exclusive facilities and benefits that will indeed accentuate your holiday experience 
+					  and make it memorable</p>
+			</div>
+		</main>
+		<div class="offrers-card-containe border">
+			<div class="icon-list icon-flex">
+				<svg class="icon-item">
+					<use xlink:href="/images/sprite.svg#icon-squre"></use>
+				</svg>
+				<p class="icon-paragraph">
+					<span class="view">ROOM SIZE</span>
+					<span class="view-des">24 SQM</span>
+				</p>
+			</div>
+			<div class=" icon-list icon-flex">
+				<svg class="icon-item">
+					<use xlink:href="/images/sprite.svg#icon-newUser"></use>
+				</svg>
+				<p class="icon-paragraph">
+					<span class="view">OCCUPANCY</span>
+					<span class="view-des">02 ADULTS</span>
+				</p>
+			</div>
+			
+		</div>
+		<div class="img-containe">
+			<img src="/images/ForestRock Imgs/DeluxPic.jpg" alt="DeluxPic">
+		</div>
+		<section class="deluxe-room">
+			<div class="content-mid">
+				<h2>Deluxe Room</h2>
+				<p>Enjoy affordable luxury at a modern and elegant accommodation!</p>
+				<div class="amenities">
+					<div class="amenity">
+						<img src="/Svg/Bar.svg" alt="Minibar">
+						<p>MINIBAR</p>
+					</div>
+					<div class="amenity">
+						<img src="/Svg/Television.svg" alt="Cable TV">
+						<p>CABLE TV</p>
+					</div>
+					<div class="amenity">
+						<img src="/Svg/Locker.svg" alt="In-room Digital Safe">
+						<p>IN-ROOM<br><span>DIGITAL SAFE</span></p>
+					</div>
+					<div class="amenity">
+						<img src="/Svg/Cofee.svg" alt="Coffee and Tea Maker">
+						<p>COFFEE AND<br><span>MAKER</span> </p>
+					</div>
+					<div class="amenity">
+						<img src="/Svg/wifi.svg" alt="Safe WiFi">
+						<p>SAFE WIFI<br><span>ROUTER</span></p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="booking-part">
+			<div class="imgSide">
+				<img src="/images/ForestRock Imgs/DeluxeRom.jpg">
+			</div>
+			<div class="bookingBar">
+				<h3 class="headingBook">Check Availability</h3>
+			</div>
+		</div>
+		<section>
+			<div class="card">
+				<div class="card-image"></div>
+				<div class="category"> Presidential Suite </div>
+				<div class="heading"> Experience an exclusive stay in a historic city by choosing our Presidential Suite.
+					<div class="author"><a href="#"> More</a> <span class="name"> </span> <a>BOOK NOW</a></div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<footer class="Footer-landing">
+		<div class="footer-landing__container">
+			<div class="container__childs">
+				<ul class="footer__list">
+					<li class="footer__list-items"><a href="#">Home</a>
+						<span class="rarr">
+							&rarr;
+						</span>
+
+					</li>
+					<li class="footer__list-items"><a href="#">Dining <span class="rarr">&rarr;</span></a></li>
+					<li class="footer__list-items"><a href="#">Location <span class="rarr">&rarr;</span></a></li>
+				</ul>
+			</div>
+			<div class="container__childs">
+				<ul class="footer__list">
+					<li class="footer__list-items"><a href="#">Rooms <span class="rarr">&rarr;</span></a></li>
+					<li class="footer__list-items"><a href="#">Facilities <span class="rarr">&rarr;</span></a></li>
+					<li class="footer__list-items"><a href="#">Experience <span class="rarr">&rarr;</span></a></li>
+				</ul>
+			</div>
+			<div class="container__childs">
+				<ul class="footer__list">
+					<li class="footer__list-items"><a href="#">Offers <span class="rarr">&rarr;</span></a></li>
+					<li class="footer__list-items"><a href="#">Wedding and Functions <span
+								class="rarr">&rarr;</span></a></li>
+					<li class="footer__list-items"><a href="#">Gallery <span class="rarr">&rarr;</span></a></li>
+				</ul>
+			</div>
+			<div class="container__childs">
+				<ul class="footer__list">
+					<li class="footer__list-items"><a href="#">Back to top <span class="rarr">&rarr;</span></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="hotel-name-big">
+			<h1 class="hotel-name-big-letter">
+				ForestRock
+			</h1>
+			<p class="street">
+				No 341, Andarawewa, Trincomalee Road, Sinharagama
+				<span class="street__mobile">0252 033 000</span>
+			</p>
+		</div>
+		<div class="footer-icons">
+			<div class="footer-icons__social-media">
+				<a href="#">
+					<svg class="social">
+						<use xlink:href="/images/sprite.svg#icon-facebook2"></use>
+					</svg>
+				</a>
+				<a href="#">
+					<svg class="social">
+						<use xlink:href="/images/sprite.svg#icon-instagram"></use>
+					</svg>
+				</a>
+				<a href="#">
+					<svg class="social">
+						<use xlink:href="/images/sprite.svg#icon-twitter"></use>
+					</svg>
+				</a>
+			</div>
+			<div class="footer-icons__hash-tag">
+				<p class="lets-get">Let's get social with</p>
+				<p class="hash-tag">#ForestRock</p>
+			</div>
+		</div>
+		<div class="stripe">
+			<div class="policy-tab">
+				<p class="policies"><a href="#">GDPR compliance</a></p>
+				<p class="policies"><a href="#">Privacy and policy</a></p>
+				<p class="policies"><a href="#">Terms and Condition</a></p>
+				<p class="policies"><a href="#">Site map</a></p>
+			</div>
+			<div class="copy-rights">
+				<p class="copy"><a href="#">&copy; 2024 Forest Rock Garden. All Rights Reserved</a></p>
+			</div>
+			<div class="group">
+				<p class="group-work">
+					<a href="#">Website Designed and Developed by GroupWeb</a>
+				</p>
+			</div>
+		</div>
+	</footer>
+	<script src="/js/deluxeRoom.js"></script>
+	<script src="/js/script.js"></script>
+</body>
+</html>
