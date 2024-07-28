@@ -138,3 +138,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+flatpickr("#myDatePicker", {
+    dateFormat: "d/m/Y",
+    placeholder: "Select a date", // Custom placeholder
+});
