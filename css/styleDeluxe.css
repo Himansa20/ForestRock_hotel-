@@ -341,12 +341,18 @@ cursor: pointer;
 .room-details {
     display: flex;
     justify-content: space-between;
+    border: 1px solid;
+    
     margin: 10px;
+
     /* gap: 1rem; */
 }
 
 .room-details div {
+    /* gap: 30rem; */
+    /* border: 1px solid black; */
     /* gap: 10rem; */
+
     display: flex;
     align-items: center;
 }
@@ -373,4 +379,3 @@ cursor: pointer;
     color: #555;
 }
 
-/* cardBottomEnd */
