@@ -220,4 +220,157 @@ cursor: pointer;
     font-weight: 400;
     padding-left: 7.5rem;
     font-size: 20px;
+<<<<<<< Updated upstream
 }
+=======
+}
+
+/* bookingCard */
+.check-availability-card {
+    border: 1px solid #ccc;
+    padding: 40px;
+    margin-left: 50px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+.checkDate{
+    /* border: 1px solid black; */
+    border-top: 1px solid rgb(0, 0, 0);
+    border-bottom: 2px solid rgb(0, 0, 0);
+    display: grid;
+}
+.nationalityCheck{
+    margin-top: 6rem;
+    /* border-radius: 20px; */
+    /* border: 1px solid black; */
+    /* border-top: 1px solid black;
+    border-bottom: 1px solid black; */
+}
+.check-availability-card h2 {
+    margin-top: 0px;
+    font-style:initial;
+    font-weight: 300;
+}
+.check-availability-card p {
+    margin-top: 2rem;
+    font-weight: 600;
+}
+.check-availability-card form {
+    display: flex;
+    flex-direction: column;
+}
+
+.check-availability-card label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.check-availability-card input,
+.check-availability-card select,
+.check-availability-card button {
+    margin-top: 5px;
+    padding: 10px;
+    /* border-spacing: 2rem; */
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.check-availability-card button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.check-availability-card button:hover {
+    background-color: #333;
+}
+
+
+/* cardBottom */
+.room-card {
+    display: flex;
+    width: 90%;
+    max-width: 300px;
+    margin-bottom: 2rem;
+    margin-left: 50rem;
+    margin-top: 9rem;
+}
+.imgClass{
+    width: 20px;
+    height: 20px;
+}
+
+.room-card h2 {
+    margin-top: 2rem;
+    font-weight: 650;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.card {
+    /* border: 1px solid #c8c8c8; */
+    border-radius: 2px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h3 {
+    margin-top: 0;
+}
+
+.card-content p {
+    margin: 10px 0;
+}
+
+.room-details {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid;
+    
+    /* gap: 1rem; */
+}
+
+.room-details div {
+    /* gap: 30rem; */
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+}
+
+.room-details img {
+    margin-right: 10px;
+}
+
+.card-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-actions a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+    border-bottom: 2px solid #000;
+    padding-bottom: 2px;
+}
+
+.card-actions a:hover {
+    border-bottom: 2px solid #555;
+    color: #555;
+}
+
+/* cardBottomEnd */
+>>>>>>> Stashed changes
