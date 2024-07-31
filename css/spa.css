@@ -1,0 +1,47 @@
+.text-p {
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 80vh;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.border-bottom {
+  border-bottom: 1px solid;
+  width: 59rem;
+}
+#text-width {
+  width: max-content;
+}
+.pharagraph-img {
+  width: 100%;
+  /* border: 1px solid blue; */
+  padding-bottom: 15rem;
+}
+.hotel-description {
+  /* border: 1px solid; */
+  width: 45rem;
+  font-size: 1.4rem;
+  transform: translateX(-50%);
+  margin-left: 50%;
+  margin-bottom: 20rem;
+  font-weight: 500;
+}
+.hotel-name--des {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.spa-img-container {
+  width: 100%;
+}
+[alt="spa-img"] {
+  width: 100%;
+  margin-bottom: 5rem;
+}
+.elephant-img-container {
+  /* border: 1px solid red; */
+}
+[alt="elephant"] {
+  display: block;
+  margin: 0 auto;
+}
