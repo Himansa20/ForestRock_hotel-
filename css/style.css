@@ -1289,3 +1289,141 @@ main.home-main {
 .rooms-card:not(:last-child) {
   margin-bottom: 1rem;
 }
+/*Room page starting..........................*/
+
+.room-img-container {
+  width: 100%;
+  /* border: 1px solid; */
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.background-container {
+  width: 95%;
+  height: 90vh;
+  /* border: 1px solid red; */
+  margin: 0 auto;
+  background-image: url("/images/ForestRock Imgs/rooms ForestRockBig.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.about-room {
+  width: 100%;
+  /* border: 1px solid; */
+}
+.text-header__small--left-align {
+  text-align: left;
+  padding-left: 4px;
+  font-weight: 500;
+}
+.time {
+  display: block;
+}
+.icon-payment {
+  width: 5.5rem;
+  height: 5.5rem;
+}
+.about-room--flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+.details-content {
+  display: flex;
+  /* border: 1px solid; */
+  align-items: center;
+  gap: 2rem;
+  /* width: 50%; */
+  /* justify-content: center; */
+}
+.details-room {
+  width: 45%;
+  margin: 0 auto;
+  gap: 6rem;
+  display: flex;
+}
+.chek-in-details {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.time {
+  font-size: 1.2rem;
+  color: var(--room-page-font-color);
+}
+.room-card-container {
+  width: 100%;
+}
+[alt="Presidential-room"] {
+  height: 20rem;
+  height: 35rem;
+}
+.room-card-container {
+  /* border: 1px solid blue; */
+  padding-bottom: 2rem;
+  gap: 8rem;
+  display: flex;
+}
+.room-icon {
+  display: flex;
+  margin-bottom: 10rem;
+  gap: 0.5rem;
+}
+.size-info {
+  display: block;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #828282;
+  margin-top: 0.5rem;
+}
+.booking-are {
+  display: flex;
+  gap: 10rem;
+}
+.more {
+  padding-left: 2px;
+}
+.room-card {
+  /* border: 1px solid red; */
+  width: 25%;
+}
+.room-card:not(:last-child) {
+  margin-left: 38rem;
+}
+.room-header {
+  font-size: 2.5rem;
+  font-weight: 500;
+  padding: 1rem 0 1rem 0;
+}
+.room-details {
+  font-size: 1.4rem;
+  font-weight: 400;
+  /* border: 1px solid; */
+  width: 90%;
+}
+.icon-squre {
+  width: 4.5rem;
+  height: 4.5rem;
+}
+.room-size-details {
+  text-transform: uppercase;
+}
+.more > a {
+  font-size: 1.5rem;
+  transition: all 0.2s;
+  display: inline-block;
+  border-bottom: 1px solid transparent;
+}
+.more > a:hover {
+  border-bottom-color: black;
+}
+.elephant-img-container {
+  width: 100%;
+  /* border: 1px solid red; */
+  padding: 15rem 0 5rem 0;
+}
+[alt="eleVarnish"] {
+  margin: 0 auto;
+  display: block;
+}
