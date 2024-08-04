@@ -1289,8 +1289,8 @@ main.home-main {
 .rooms-card:not(:last-child) {
   margin-bottom: 1rem;
 }
-/*Room page starting..........................*/
 
+/*Room page starting..........................*/
 .room-img-container {
   width: 100%;
   /* border: 1px solid; */
@@ -1426,4 +1426,77 @@ main.home-main {
 [alt="eleVarnish"] {
   margin: 0 auto;
   display: block;
+}
+
+/*Delux room start...................................*/
+.area {
+  font-size: 1.8rem;
+  margin-top: 1rem;
+  font-weight: 600;
+}
+.chek-in-details--color-gray {
+  color: var(--room-page-font-color);
+  font-size: 1.2rem;
+}
+
+.room-booking-area-2 {
+  display: flex;
+  /* border: 1px solid blue; */
+  margin-bottom: 2rem;
+  align-items: center;
+  gap: 5rem;
+}
+.booking-component {
+  width: 20rem;
+  /* border: 1px solid red; */
+}
+.delux-room-img {
+  /* border: 1px solid; */
+  width: max-content;
+}
+[alt="delux-img-2"] {
+  width: 90rem;
+}
+.hide-booking--view {
+  display: block;
+}
+.booking-component-holder {
+  width: 20rem;
+  /* border: 1px solid red; */
+  width: 20rem;
+}
+.delux-booking {
+  border: 1px solid;
+  padding: 1rem;
+  height: 30rem;
+  border-radius: 3px;
+}
+.hotel-name-dropdown--marging {
+  margin-bottom: 2rem;
+}
+.datepicker-toggle--marging-right {
+  margin-right: 1rem;
+}
+.booking-dates-text--marging {
+  margin-bottom: 2rem;
+}
+.country-option--marging-bottem {
+  margin-bottom: 3rem;
+}
+.room-card--center {
+  display: flex;
+  justify-content: center;
+}
+[alt="Presidential-room--height"] {
+  height: 20rem;
+  width: 25rem;
+}
+.other-room-header {
+  font-size: 1.9rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin-bottom: 0.5rem;
+}
+.room-icon--marging {
+  margin-bottom: 4.5rem;
 }
