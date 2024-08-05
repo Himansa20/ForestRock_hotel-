@@ -1500,3 +1500,65 @@ main.home-main {
 .room-icon--marging {
   margin-bottom: 4.5rem;
 }
+.bed-view-and-icon {
+  /* border: 1px solid red; */
+  margin-bottom: 5rem;
+}
+.bed-img {
+  /* border: 1px solid; */
+  width: 71rem;
+  height: 30rem;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+.margin-left {
+  margin-left: 38rem;
+}
+[alt="bed-image"] {
+  width: 70rem;
+  height: 35rem;
+}
+.delux-header {
+  font-size: 1.9rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+.delux-descript {
+  font-size: 1.2rem;
+  font-size: 300;
+}
+.center-icon--size {
+  width: 5rem;
+  height: 5rem;
+  fill: #000;
+  /* border: 1px solid red; */
+  margin-left: -3rem;
+  transform: translateX(50%);
+}
+.icon-flex-2 {
+  display: flex;
+  align-items: center;
+  /* border: 1px solid; */
+}
+.define {
+  text-transform: uppercase;
+  /* border: 1px solid gold; */
+  margin-left: 5rem;
+}
+.flex-container-2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6rem;
+}
+.block-text {
+  display: block;
+}
+.define {
+  font-size: 1.4rem;
+}
+.block-text {
+  color: #adadad;
+}
+.room-header-2 {
+  margin-bottom: 2rem;
+}
