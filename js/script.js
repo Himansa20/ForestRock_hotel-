@@ -9,6 +9,9 @@
 //         });
 //     });
 // });
+
+
+
 document.addEventListener('DOMContentLoaded', () => {
     const navUser = document.querySelector('.nav__user');
     const userOption = document.querySelector('.user-option');
@@ -53,17 +56,17 @@ setInterval(() => {
 
 const certificateBtn = document.querySelector(".certificate-popup__btn");
 const certificate__img = document.querySelector(".certificate__img");
-const certificate = document.querySelector(".certificate");
-const overlay = document.querySelector(".overlay");
+const certificate = document.querySelectorAll(".certificate");
+const overlay = document.querySelectorAll(".overlay");
 
 certificateBtn.addEventListener('click', function () {
     overlay.classList.remove("hidden");
     certificate__img.classList.add("show-certificate");
-})
+});
 overlay.addEventListener('click', function () {
     overlay.classList.add("hidden");
     certificate__img.classList.remove("show-certificate");
-})
+});
 
 //Booking date function
 
