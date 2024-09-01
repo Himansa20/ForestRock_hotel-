@@ -1861,3 +1861,22 @@ textarea[name="inquery"] {
   background-size: cover;
   background-position: center;
 }
+
+/*Offers page....................*/
+.offers-img-banner {
+  width: 95%;
+  height: 80vh;
+  margin: 0 auto;
+  margin-top: 13rem;
+  background-image: url("/images/ForestRock Imgs/Faci.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 10% 45%;
+}
+.inquiry-now {
+  font-size: 1.4rem;
+}
+.cart-btn-flex {
+  display: flex;
+  gap: 3.5rem;
+}
