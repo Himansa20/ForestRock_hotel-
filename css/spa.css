@@ -33,6 +33,7 @@
 }
 .spa-img-container {
   width: 100%;
+  margin-top: -5rem;
 }
 [alt="spa-img"] {
   width: 100%;
