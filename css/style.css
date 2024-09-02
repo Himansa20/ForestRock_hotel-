@@ -2088,6 +2088,12 @@ img[alt="logo-company"] {
   background-size: cover;
   background-position: center;
 }
+.btn-bk {
+  color: white;
+}
+.btn--center:hover > * {
+  color: #000;
+}
 .room-details-container {
   width: 70%;
   margin-left: 28%;
