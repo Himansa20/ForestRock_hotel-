@@ -2067,3 +2067,65 @@ img[alt="logo-company"] {
 .spa-text {
   margin-top: 10rem;
 }
+/*Presidential............*/
+.Background_img-presidential {
+  width: 95%;
+  margin: 0 auto;
+  height: 90vh;
+  background-image: url("/images/ForestRock Imgs/rooms ForestRockBig.jpg");
+  /* border: 1px solid; */
+  margin-top: 10rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.room-image-container {
+  width: 70%;
+  height: 50vh;
+  margin-left: 28%;
+  /* border: 1px solid; */
+  background-image: url("/images/ForestRock Imgs/DeluxPic.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.room-details-container {
+  width: 70%;
+  margin-left: 28%;
+  /* border: 1px solid; */
+  margin-top: 2rem;
+  margin-bottom: 10rem;
+}
+.bottom-border-absolute {
+  width: 70%;
+  position: absolute;
+  margin-left: 28%;
+  top: 100%;
+  border-bottom: 1px solid;
+}
+.room-details-container > * {
+  margin-bottom: 2rem;
+}
+.more-describe {
+  font-size: 1.4rem;
+}
+.margin-delux-bottom {
+  margin-bottom: 3rem;
+}
+.delux-room-img {
+  width: 60%;
+  height: 60vh;
+  background-image: url("/images/ForestRock Imgs/rooms ForestRockBig.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.marging-bottom-delux {
+  margin-bottom: 6rem;
+  padding-bottom: 5rem;
+  position: relative;
+  /* border: 1px solid; */
+}
+.availability {
+  padding: 0.5rem;
+  font-weight: 500;
+}
