@@ -2135,3 +2135,70 @@ img[alt="logo-company"] {
   padding: 0.5rem;
   font-weight: 500;
 }
+.account-sign-in {
+  width: 70%;
+  background-color: #fff;
+  height: 50rem;
+  position: fixed;
+  border: 2px solid;
+  border-radius: 10px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000000000000000;
+  padding: 1rem;
+  animation: certificatePopups 0.5s ease;
+}
+@keyframes certificatePopups {
+  0% {
+    opacity: 0;
+    transform: scale(0) translateX(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateX(-50%);
+  }
+}
+
+.sign-form-display {
+  display: none;
+}
+.account {
+  font-weight: 400;
+  border-bottom: 1px solid #828282;
+  padding: 1rem;
+}
+.form-container-sign {
+  display: flex;
+  /* border: 1px solid; */
+  gap: 2rem;
+}
+.user-flex {
+  width: 50%;
+  border: 1px solid;
+  margin-top: 2rem;
+  border-radius: 10px;
+  padding: 3rem;
+}
+.sesion-control {
+  display: flex;
+
+  gap: 2rem;
+  padding: 1rem 0 1rem 0;
+  margin-top: 2rem;
+}
+.btn--signin {
+  width: 25rem;
+}
+.btn-section {
+  padding: 1rem;
+}
+.sign-in {
+  margin-bottom: 2rem;
+}
+.form-container-In {
+  border-bottom: 1px solid black;
+}
+.align {
+  float: right;
+  margin-top: 1rem;
+}

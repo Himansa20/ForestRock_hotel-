@@ -9,6 +9,22 @@
 //         });
 //     });
 // });
+
+//Sign in
+
+const signClick = document.querySelector(".user-option__items--head");
+// console.log(signClick);
+const account_signW = document.querySelector(".account-sign-in");
+const closeButton = document.querySelector(".align");
+signClick.addEventListener('click', function () {
+    account_signW.classList.remove("sign-form-display");
+
+
+});
+closeButton.addEventListener('click', function () {
+    account_signW.classList.add("sign-form-display");
+})
+
 // Galery function............................
 const tabs = document.querySelectorAll('.tab-btn');
 const all_content = document.querySelectorAll('.gallery-grid');
