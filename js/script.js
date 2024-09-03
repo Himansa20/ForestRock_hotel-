@@ -18,8 +18,6 @@ const account_signW = document.querySelector(".account-sign-in");
 const closeButton = document.querySelector(".align");
 signClick.addEventListener('click', function () {
     account_signW.classList.remove("sign-form-display");
-
-
 });
 closeButton.addEventListener('click', function () {
     account_signW.classList.add("sign-form-display");
@@ -47,11 +45,9 @@ tabs.forEach((tab, index) => {
 document.addEventListener('DOMContentLoaded', () => {
     const navUser = document.querySelector('.nav__user');
     const userOption = document.querySelector('.user-option');
-
     navUser.addEventListener('click', () => {
         userOption.classList.toggle('visible');
     });
-
     // Close the user-option menu when clicking outside
     document.addEventListener('click', (event) => {
         if (!navUser.contains(event.target)) {

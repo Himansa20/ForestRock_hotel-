@@ -9,9 +9,8 @@
 </head>
 
 <body>
-
     <header>
-        <nav class="navigation">
+        <nav class="navigation fixed-nav">
             <div class="navigation__logo">
                 <a href="/index.html">
                     <h2 class="navigation__logo-text">hotel forest rock</h2>
@@ -19,15 +18,12 @@
             </div>
             <div class="navigation__menu-1">
                 <ul class="navigation-list">
-
                     <li class="navigation__list-items">
                         <a href="/pages/rooms.html">Rooms</a>
                     </li>
-
                     <li class="navigation__list-items">
                         <a href="/pages/offers.html">Offers</a>
                     </li>
-
                     <li class="navigation__list-items">
                         <a href="/pages/gallery.html">Gallery</a>
                     </li>
@@ -52,10 +48,13 @@
                         <div class="nav__more-option">
                             <ul class="more-option__list">
                                 <li class="moreoption__list-items"><a href="/pages/dining.html">Dining</a></li>
-                                <li class="moreoption__list-items"><a href="/pages/facilities.html">Facilities</a></li>
+                                <li class="moreoption__list-items"><a href="/pages/facilities.html">Facilities</a>
+                                </li>
                                 <li class="moreoption__list-items"><a href="/pages/spa.html">Spa</a></li>
-                                <li class="moreoption__list-items"><a href="/pages/wedding&function.html">Wedding and function</a></li>
-                                <li class="moreoption__list-items"><a href="/pages/experience.html">Experience</a></li>
+                                <li class="moreoption__list-items"><a href="/pages/wedding&function.html">Wedding
+                                        and function</a></li>
+                                <li class="moreoption__list-items"><a href="/pages/experience.html">Experience</a>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -97,8 +96,8 @@
                         </select>
 
                     </div>
-                    <div class="btn"><a href="#" class="btn-bk"><button
-                                class="button navigation-button--primary btn--center">Book now</button></a>
+                    <div class="btn"><button class="button navigation-button--primary btn--center">
+                            <a href="/pages/booknow.html" class="btn-bk">Book now</a></button>
                     </div>
                 </div>
                 <div class="nav__user">
@@ -112,8 +111,8 @@
                     </span>
                     <ul class="user-option">
                         <li class="user-option__items--head">Account</li>
-                        <li class="user-option__items"><a href="#">Settings</a></li>
-                        <li class="user-option__items"><a href="#">Booking history</a></li>
+                        <!-- <li class="user-option__items"><a href="#">Settings</a></li> -->
+                        <li class="user-option__items"><a href="/pages/booknow.html">Booking history</a></li>
                         <li class="user-option__items"><a href="/pages/Gethelp.html">Get help</a></li>
                         <li class="user-option__items"><a href="#">Sign out</a></li>
                     </ul>
@@ -121,6 +120,48 @@
             </div>
         </nav>
     </header>
+    <div class="account-sign-in sign-form-display">
+        <h1 class="account">My Account</h1>
+        <div class="form-container-sign">
+            <div class="user-flex">
+                <h2 class="sign-in">Sign IN</h2>
+                <div class="form-container-In">
+                    <form action="signin.php" method="POST">
+                        <input type="text" name="name" id="" placeholder="Name" required>
+                        <input type="email" name="email" id="" placeholder="E-mail" required>
+                        <input type="text" placeholder="Mobile-number" name="mobile">
+                    </form>
+                </div>
+                <div class="sesion-control">
+                    <input type="checkbox">
+                    <p class="keep-me">Keep me logged in</p>
+                </div>
+                <div class="btn-section">
+                    <button class="button navigation-button--primary btn--signin" id="bookNowBtn">Sign in</button>
+                    <!-- <p class="forgot-password">
+                        <a href="#">forgot password ?</a>
+                    </p> -->
+                </div>
+            </div>
+            <div class="user-flex">
+                <h2 class="sign-in">Cancel Booking</h2>
+                <div class="form-container-In">
+                    <form action="">
+                        <input type="email" name="" id="" placeholder="E-mail">
+                        <input type="text" placeholder="Itinerary Booking number">
+                        <input type="text" placeholder="Mobile-number">
+                    </form>
+                </div>
+
+                <div class="btn-section">
+                    <button class="button navigation-button--primary btn--signin" id="bookNowBtn">Cancel
+                        Booking</button>
+                </div>
+            </div>
+        </div>
+        <button class="button navigation-button--primary align" id="bookNowBtn">close</button>
+    </div>
+
     <div class="room-img-container">
         <div class="background-container">
         </div>
@@ -234,23 +275,29 @@
                         </span>
 
                     </li>
-                    <li class="footer__list-items"><a href="/pages/dining.html">Dining <span class="rarr">&rarr;</span></a></li>
+                    <li class="footer__list-items"><a href="/pages/dining.html">Dining <span
+                                class="rarr">&rarr;</span></a></li>
                     <li class="footer__list-items"><a href="#">Location <span class="rarr">&rarr;</span></a></li>
                 </ul>
             </div>
             <div class="container__childs">
                 <ul class="footer__list">
-                    <li class="footer__list-items"><a href="/pages/rooms.html">Rooms <span class="rarr">&rarr;</span></a></li>
-                    <li class="footer__list-items"><a href="/pages/facilities.html">Facilities <span class="rarr">&rarr;</span></a></li>
-                    <li class="footer__list-items"><a href="/pages/experience.html">Experience <span class="rarr">&rarr;</span></a></li>
+                    <li class="footer__list-items"><a href="/pages/rooms.html">Rooms <span
+                                class="rarr">&rarr;</span></a></li>
+                    <li class="footer__list-items"><a href="/pages/facilities.html">Facilities <span
+                                class="rarr">&rarr;</span></a></li>
+                    <li class="footer__list-items"><a href="/pages/experience.html">Experience <span
+                                class="rarr">&rarr;</span></a></li>
                 </ul>
             </div>
             <div class="container__childs">
                 <ul class="footer__list">
-                    <li class="footer__list-items"><a href="/pages/offers.html">Offers <span class="rarr">&rarr;</span></a></li>
+                    <li class="footer__list-items"><a href="/pages/offers.html">Offers <span
+                                class="rarr">&rarr;</span></a></li>
                     <li class="footer__list-items"><a href="/pages/wedding&function.html">Wedding and Functions <span
                                 class="rarr">&rarr;</span></a></li>
-                    <li class="footer__list-items"><a href="/pages/gallery.html">Gallery <span class="rarr">&rarr;</span></a></li>
+                    <li class="footer__list-items"><a href="/pages/gallery.html">Gallery <span
+                                class="rarr">&rarr;</span></a></li>
                 </ul>
             </div>
             <div class="container__childs">
@@ -308,7 +355,7 @@
             </div>
         </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="/js/script.js"></script>
 </body>
 
 </html>

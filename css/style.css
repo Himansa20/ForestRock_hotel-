@@ -1885,14 +1885,14 @@ textarea[name="inquery"] {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(9, 1fr);
-  grid-column-gap: 0.5rem;
-  grid-row-gap: 0.5rem;
-  width: 47%;
+  grid-column-gap: 0.7rem;
+  grid-row-gap: 0.7rem;
+  width: 55%;
   margin: 0 auto;
 }
 img[alt="img-gallery"] {
-  width: 10rem;
-  height: 10rem;
+  width: 12rem;
+  height: 12rem;
 }
 .gallery-tab {
   /* border: 1px solid red; */
