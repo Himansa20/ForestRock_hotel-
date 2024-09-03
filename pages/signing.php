@@ -1,9 +1,9 @@
 <?php
 // Database connection details
-$host = 'localhost'; // or your host
-$db = 'your_database';
-$user = 'your_username';
-$pass = 'your_password';
+$host = 'sql100.infinityfree.com'; // or your host
+$db = 'if0_37237624_forestrockdb';
+$user = 'if0_37237624';
+$pass = 'Khl8TxSeXtnsyyo';
 
 try {
     // Create a PDO connection
