@@ -10,8 +10,8 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="/css/style.css">
 	<link rel="stylesheet" href="/css/styleWedding&Function.css">
+	<link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
@@ -24,6 +24,7 @@
 			</div>
 			<div class="navigation__menu-1">
 				<ul class="navigation-list get-help2">
+
 					<li class="navigation__list-items"><a href="/pages/rooms.html">ROOMS</a></li>
 
 					<li class="navigation__list-items"><a href="/pages/offers.html">OFFERS</a></li>
@@ -31,9 +32,7 @@
 
 					<li class="navigation__list-items"><a href="/pages/dining.html">DINING</a></li>
 
-
 					<li class="navigation__list-items"><a href="/pages/facilities.html">FACILITIES</a></li>
-
 
 					<li class="navigation__list-items"><a href="/pages/spa.html">SPA</a></li>
 
@@ -46,7 +45,6 @@
 
 
 					<li class="navigation__list-items"><a href="/pages/experience.html">EXPERRIENCE</a></li>
-
 				</ul>
 			</div>
 
@@ -74,7 +72,43 @@
 				</div>
 
 				<div class="navigation__button">
-					<button class="button navigation-button--primary">Book now</button>
+					<button class="button navigation-button--primary" id="bookNowBtn">Book now</button>
+				</div>
+				<div class="nav__bokking-dropdown hide-booking" id="bookingDropdown">
+					<svg class="dot-horizo center-icon">
+						<use xlink:href="/images/sprite.svg#icon-cheveron-down"></use>
+					</svg>
+					<p class="hotel-name-dropdown">Forest Rock Garden</p>
+
+					<div class="calender-range">
+						<span class="datepicker-toggle">
+							<span class="datepicker-toggle-button"></span>
+							<input type="date" class="datepicker-input">
+						</span>
+						<span class="datepicker-toggle">
+							<span class="datepicker-toggle-button"></span>
+							<input type="date" class="datepicker-input">
+						</span>
+					</div>
+					<div class="booking-dates height-dates">
+						<p class="current-date bold"></p>
+						<p class="leave-date bold"></p>
+					</div>
+					<div class="booking-dates booking-dates-text">
+						<p class="current-date checking-text">Check-In</p>
+						<p class="leave-date checking-text">Check-out</p>
+					</div>
+					<div class="country-option">
+						<label for="country">Nationality</label>
+						<select>
+							<option selected value="0">Sri Lanka</option>
+							<option value="1">Foreign</option>
+						</select>
+
+					</div>
+					<div class="btn"><button class="button navigation-button--primary btn--center">
+							<a href="/pages/booknow.html" class="btn-bk">Book now</a></button>
+					</div>
 				</div>
 				<div class="nav__user">
 					<div class="nav__user-img">
@@ -88,14 +122,13 @@
 					<ul class="user-option">
 						<li class="user-option__items--head">Account</li>
 						<!-- <li class="user-option__items"><a href="#">Settings</a></li> -->
-						<li class="user-option__items"><a href="#">Booking history</a></li>
+						<li class="user-option__items"><a href="/pages/booknow.html">Booking history</a></li>
 						<li class="user-option__items"><a href="/pages/Gethelp.html">Get help</a></li>
 						<li class="user-option__items"><a href="#">Sign out</a></li>
 					</ul>
 				</div>
 			</div>
 		</nav>
-
 	</header>
 	<div class="account-sign-in sign-form-display">
 		<h1 class="account">My Account</h1>
@@ -234,7 +267,7 @@
 				</div>
 			</div>
 			<div class="form-group">
-				<button class="btn" type="submit">SUBMIT</button>
+				<button class="btn2" type="submit">SUBMIT</button>
 			</div>
 		</form>
 	</div>

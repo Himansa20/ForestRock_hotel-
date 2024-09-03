@@ -1816,7 +1816,7 @@ textarea[name="inquery"] {
 .cart-img-2 {
   width: 25rem;
   height: 30rem;
-  background-image: url("/images/ForestRock Imgs/GALLERY/dining_img4.jpg");
+  background-image: url("/images/ForestRock Imgs/HMOffer.jpg");
   background-size: cover;
   margin-bottom: 1rem;
 }
@@ -1868,7 +1868,7 @@ textarea[name="inquery"] {
   height: 80vh;
   margin: 0 auto;
   margin-top: 13rem;
-  background-image: url("/images/ForestRock Imgs/Faci.jpg");
+  background-image: url("/images/ForestRock Imgs/EarlyBird.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 10% 45%;
@@ -1982,6 +1982,7 @@ img[alt="img-gallery"] {
 }
 .review-category {
   color: #ffffff;
+  font-size: 1.4rem;
 }
 .review-box {
   position: relative;
@@ -2201,4 +2202,11 @@ img[alt="logo-company"] {
 .align {
   float: right;
   margin-top: 1rem;
+}
+img[alt="logo-g"] {
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  top: -1rem;
+  left: -2rem;
 }

@@ -12,6 +12,22 @@
 
 //Sign in
 
+document.addEventListener('DOMContentLoaded', () => {
+    const bookNowBtn = document.getElementById('bookNowBtn');
+    const bookingDropdown = document.getElementById('bookingDropdown');
+
+    bookNowBtn.addEventListener('click', (event) => {
+        event.stopPropagation();
+        bookingDropdown.classList.toggle('hide-booking');
+    });
+
+    document.addEventListener('click', (event) => {
+        if (!bookingDropdown.contains(event.target) && !bookNowBtn.contains(event.target)) {
+            bookingDropdown.classList.add('hide-booking');
+        }
+    });
+});
+
 const signClick = document.querySelector(".user-option__items--head");
 // console.log(signClick);
 const account_signW = document.querySelector(".account-sign-in");
@@ -41,7 +57,8 @@ tabs.forEach((tab, index) => {
     })
 
 })
-
+const navUser = document.querySelector('.nav__user');
+const userOption = document.querySelector('.user-option');
 document.addEventListener('DOMContentLoaded', () => {
     const navUser = document.querySelector('.nav__user');
     const userOption = document.querySelector('.user-option');
@@ -63,7 +80,8 @@ buttons.forEach(button => {
         moveToNextSlide(button.dataset.carouselButton === "next" ? 1 : -1)
     })
 })
-
+// const slides = document.querySelector("[data-carousel] [data-slides]")
+// const activeSlide = slides.querySelector("[data-active]")
 function moveToNextSlide(offset) {
     const slides = document.querySelector("[data-carousel] [data-slides]")
     const activeSlide = slides.querySelector("[data-active]")
@@ -155,21 +173,10 @@ btnBook.addEventListener('click', function () {
     removecls.classList.remove('hide-booking');
 })
 */
-document.addEventListener('DOMContentLoaded', () => {
-    const bookNowBtn = document.getElementById('bookNowBtn');
-    const bookingDropdown = document.getElementById('bookingDropdown');
+// const bookNowBtn = document.getElementById('bookNowBtn');
+// const bookingDropdown = document.getElementById('bookingDropdown');
 
-    bookNowBtn.addEventListener('click', (event) => {
-        event.stopPropagation();
-        bookingDropdown.classList.toggle('hide-booking');
-    });
 
-    document.addEventListener('click', (event) => {
-        if (!bookingDropdown.contains(event.target) && !bookNowBtn.contains(event.target)) {
-            bookingDropdown.classList.add('hide-booking');
-        }
-    });
-});
 flatpickr("#myDatePicker", {
     dateFormat: "d/m/Y",
     placeholder: "Select a date", // Custom placeholder

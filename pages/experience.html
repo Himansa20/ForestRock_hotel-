@@ -70,7 +70,43 @@
                 </div>
 
                 <div class="navigation__button">
-                    <button class="button navigation-button--primary">Book now</button>
+                    <button class="button navigation-button--primary" id="bookNowBtn">Book now</button>
+                </div>
+                <div class="nav__bokking-dropdown hide-booking" id="bookingDropdown">
+                    <svg class="dot-horizo center-icon">
+                        <use xlink:href="/images/sprite.svg#icon-cheveron-down"></use>
+                    </svg>
+                    <p class="hotel-name-dropdown">Forest Rock Garden</p>
+
+                    <div class="calender-range">
+                        <span class="datepicker-toggle">
+                            <span class="datepicker-toggle-button"></span>
+                            <input type="date" class="datepicker-input">
+                        </span>
+                        <span class="datepicker-toggle">
+                            <span class="datepicker-toggle-button"></span>
+                            <input type="date" class="datepicker-input">
+                        </span>
+                    </div>
+                    <div class="booking-dates height-dates">
+                        <p class="current-date bold"></p>
+                        <p class="leave-date bold"></p>
+                    </div>
+                    <div class="booking-dates booking-dates-text">
+                        <p class="current-date checking-text">Check-In</p>
+                        <p class="leave-date checking-text">Check-out</p>
+                    </div>
+                    <div class="country-option">
+                        <label for="country">Nationality</label>
+                        <select>
+                            <option selected value="0">Sri Lanka</option>
+                            <option value="1">Foreign</option>
+                        </select>
+
+                    </div>
+                    <div class="btn"><button class="button navigation-button--primary btn--center">
+                            <a href="/pages/booknow.html" class="btn-bk">Book now</a></button>
+                    </div>
                 </div>
                 <div class="nav__user">
                     <div class="nav__user-img">
@@ -84,7 +120,7 @@
                     <ul class="user-option">
                         <li class="user-option__items--head">Account</li>
                         <!-- <li class="user-option__items"><a href="#">Settings</a></li> -->
-                        <li class="user-option__items"><a href="#">Booking history</a></li>
+                        <li class="user-option__items"><a href="/pages/booknow.html">Booking history</a></li>
                         <li class="user-option__items"><a href="/pages/Gethelp.html">Get help</a></li>
                         <li class="user-option__items"><a href="#">Sign out</a></li>
                     </ul>
@@ -133,8 +169,6 @@
         </div>
         <button class="button navigation-button--primary align" id="bookNowBtn">close</button>
     </div>
-
-
 
     <div class="img-gethelp">
         <div class="img-container-get-help experience">
@@ -440,16 +474,16 @@
                         <use xlink:href="/images/sprite.svg#icon-star"></use>
                     </svg>
                 </div>
-
-                <p class="review-text">
-                    Add some thoughts about us :)
-                </p>
-                <div class="chec-ico">
-                    <svg class="right-chev">
-                        <use xlink:href="/images/sprite.svg#icon-chevron-right"></use>
-                    </svg>
-                </div>
-
+                <a href="#">
+                    <p class="review-text">
+                        Add some thoughts about us :)
+                    </p>
+                    <div class="chec-ico">
+                        <svg class="right-chev">
+                            <use xlink:href="/images/sprite.svg#icon-chevron-right"></use>
+                        </svg>
+                    </div>
+                </a>
             </div>
         </div>
     </div>
