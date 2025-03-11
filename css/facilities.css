@@ -12,3 +12,22 @@
     background-image: url("/images/ForestRock Imgs/HMOffer.jpg");
 }
 
+img {
+    width: 750px;
+    height: 700px;
+    margin: 10px;
+    border: 10px solid #fefae0;
+    
+    transition-duration: 1s;
+}
+img:hover {
+    border: 5px solid #fff;
+    transform: scale(1.1);
+    
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
